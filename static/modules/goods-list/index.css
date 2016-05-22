@@ -89,7 +89,6 @@ body {
   display: inline-block;
   width: 33.33%;
   text-align: center;
-  float: right;
 }
 .goods-order > li.cat-panel > a {
   color: #ea0079;
