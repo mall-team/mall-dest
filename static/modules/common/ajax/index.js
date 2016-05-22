@@ -36,9 +36,9 @@ Ajax.prototype = {
 		// }
 		// options.data = data;
 		if (options.url.match(/\?[^=]+=.*$/)) {
-			options.url += '&tjzAjax=1';
+			options.url += '&isAjax=1';
 		} else {
-			options.url += '?tjzAjax=1';
+			options.url += '?isAjax=1';
 		}
 
 		options.success = function(data) {
