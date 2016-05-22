@@ -7,7 +7,7 @@ var Timer = require('common/timer/timer');
 var Ajax = require('common/ajax/index');
 var Util = require('common/util/index');
 var Alert = require('common/alert/alert');
-var KljAlert = require('klj/klj-alert/index');
+// var KljAlert = require('klj/klj-alert/index');
 
 require('search-panel/index');
 require('common/gotop/index');
@@ -21,7 +21,7 @@ function init() {
 		container: 'banner',
 		pager: 'bannerPager'
 	});
-	isKlj();
+	// isKlj();
 	initTimer();
 	initCart();
 	lazyLoadImg();
@@ -330,7 +330,7 @@ function initTimer() {
  */
 function initCart() {
 	new Ajax().send({
-		url: '/Mall/Home/cartGoodsNumber'
+		url: $('#J-ajaxurl-initCart').val()
 	}, function(result) {
 		var num = +result.number;
 		var $cart = $('.cart');
