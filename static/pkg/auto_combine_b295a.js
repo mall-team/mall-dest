@@ -3027,13 +3027,13 @@ function addCar() {
 	// 	Bubble.show('已经卖光了，下次早点哦!');
 	// 	return;
 	// }
-	var url = '/Mall/Cart/add';
+	var url = $('#J-ajaxurl-addCart').val();
 	var data = {
 		productId: goods_id,
-		skuIds: sku_info.sku_id,
-		skuTexts: sku_info.skuTexts,
-		skuValues: sku_info.skuValues,
-		skuValuesText: sku_info.skuValuesText,
+		// skuIds: sku_info.sku_id,
+		// skuTexts: sku_info.skuTexts,
+		// skuValues: sku_info.skuValues,
+		// skuValuesText: sku_info.skuValuesText,
 		productNumber: goods_number
 	};
 
@@ -3076,13 +3076,13 @@ function quickBuy() {
 	// 	Bubble.show('已经卖光了，下次早点哦!');
 	// 	return;
 	// }
-	var url = '/Mall/Pay/immediateBuy';
+	var url = $('#J-ajaxurl-quickBuy').val();
 	var data = {
 		productId: goods_id,
-		skuIds: sku_info.sku_id,
-		skuTexts: sku_info.skuTexts,
-		skuValues: sku_info.skuValues,
-		skuValuesText: sku_info.skuValuesText,
+		// skuIds: sku_info.sku_id,
+		// skuTexts: sku_info.skuTexts,
+		// skuValues: sku_info.skuValues,
+		// skuValuesText: sku_info.skuValuesText,
 		productNumber: goods_number,
 		spe: $('#J-goods-type').val(),
 		speId: $('#J-spe-id').val()
