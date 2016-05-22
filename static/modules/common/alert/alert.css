@@ -1,0 +1,70 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.alert {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 5000;
+  max-width: 640px;
+}
+.alert .mask {
+  background-color: #000;
+  opacity: .8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.alert .icon-close {
+  display: none;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAMAAABG8BK2AAAAclBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////29vemq7CUmKCmq7HR0tXP0tWPVJWzAAAAH3RSTlMAYdkF8K6o0hPnHPlJLfO1Uh3ek1jIkIdMRg/FnMaUuNERAAAAAZJJREFUWMO9mNtygyAQhgEFMR4SczSH9jdp+v6vWC/SThrQFdnJd+kM34wLLLsrRqjkQWd5DdR5pg+yEuFYaXK8kBtpgySlLuCl0OVURyIVRlAymWI5KhCoIylZGEzALMYtqxSTSFdjUdlgMpvBCNkzAjjbgbAoBKEWXssagaw9HqsQjLJOdHeYwe41zhvM4vPlvGAmq3/hTTGTtHnSGMxm+XQbEUH7p1GIQP3u1hZRbB+aDFFkj4yJSMrhbbp38NDd4cGInlPhs9y+Oo/levuGS3HqNRLwLug97sdrBw+y12gQHtICLUSSgvCQFqSJqODgLCMsQCUkKA9tgRR7UB7agr1YgvLQFixFBspDW5CJHKSHtCAXNUgPaUEtANJDWgAmDdNPMYWYacOZjh/TZWC6mkyJgilt8SRRppTO9MDwPHdMjy9PKcBUmPCVSfHRaXlKSP6CVsjY+D64YBYXptaDpxHiastcmtAmseFoWT8sTwPN3s67NAYT0A3HqKPkHLzQtMNjoPa9Qyl3RFaka2pE9gPXT82uGKSvfgAAAABJRU5ErkJggg==');
+  width: 43px;
+  height: 35px;
+  background-position: 0 center;
+  position: absolute;
+  top: -17px;
+  right: 0;
+  z-index: 100;
+}
+.alert .alert-content {
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  width: 93.75%;
+  margin: 150px auto 0;
+  position: relative;
+  z-index: 2;
+}
+.alert iframe {
+  border: 0;
+  width: 100%;
+}

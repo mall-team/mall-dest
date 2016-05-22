@@ -1,0 +1,180 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.panel-cm {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  z-index: 2001;
+  overflow: hidden;
+}
+.panel-cm .mask {
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.panel-cm .panel-content {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  width: 100%;
+  z-index: 2;
+}
+.panel-cm .g-item {
+  background-color: #fafafa;
+  padding: 12px 3.125% 10px;
+}
+.panel-cm .g-item .dib {
+  vertical-align: middle;
+}
+.panel-cm .g-item .price {
+  color: #ea0079;
+}
+.panel-cm .img-wrap {
+  width: 13.33333333%;
+  margin-right: 2.66666667%;
+}
+.panel-cm .img-wrap:before {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.panel-cm .g-mid {
+  width: 70.66666667%;
+}
+.panel-cm .g-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.panel-cm .close {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA1CAYAAADh5qNwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAaVJREFUeNrc2j1KBEEQBeDxuQgeQDASjAy8xB5iL+EpFgwNJhI3M/YYgpfQdCNhwVQwshpnlmHZmemfquoqCx50T0cfNR0U9Mnj5rn5J3VG+QkLDD5eUS6dglaU986wR4XNG+XVISyAXijX3XqPCm37ptw4g/WgU8o9pR2iPilLyocj2CFo3R8M75Qn2CjoEOUFNgk6hrIOmwWNoazCokBTKGuwaNAcygosCRSDqg1LBsWiasGyQCkobVg2KBWlBSsC5aCkYcWgXJQUjAVUguKGsYFKUVwwVhAHqhTGDuJC5cJEQJyoVJgYiBsVCxMFSaDmYOIgKdQY7E4DJIk6BnvSAEmjelg72O8oG+l5RRq16joU6otyoTG2QBg0vEO3WvMYlEBrzXkMSiDVQROKIDUYlEEqMFQAicNQCSQKQ0WQGAyVQSIwGACxw2AExAqDIRAbDMZALDAYBBXDYBRUBINhUDYMxkFZMDgAJcPgBJQEgyNQNAzOQFEwOATNwgIqvGh8cAaahC2av7d+y65bbeOvelgAnYcmLbqDrVPQISz8ddtfAQYAwbv4BzFjGkgAAAAASUVORK5CYII=');
+  width: 27px;
+  height: 27px;
+  margin-left: 5px;
+}
+.panel-cm .cm-amount {
+  font-size: 12px;
+  border-top: 1px solid #eeeeee;
+  height: 50px;
+  line-height: 48px;
+  padding: 0 3.125%;
+}
+.panel-cm .amount-bar {
+  background-color: #fff;
+}
+.panel-cm .cm-foot {
+  border-top: 1px solid #eeeeee;
+  padding: 10px 3.125% 7px;
+}
+.panel-cm .cm-foot .btn {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+}
+.panel-cm.add-phone .panel-content {
+  background-color: #f0eff4;
+}
+.panel-cm.add-phone .cm-content {
+  max-height: 170px;
+}
+.panel-cm.add-phone .cm-amount {
+  background-color: #fafafa;
+}
+.panel-cm.add-phone .phone-panel {
+  display: block;
+}
+.panel-cm.add-phone .cm-foot {
+  display: none;
+}
+.panel-cm .phone-panel {
+  display: none;
+  padding: 0 0 15px;
+  position: relative;
+  z-index: 10000;
+  margin-top: 20px;
+}
+.panel-cm .phone-panel .phone-title {
+  color: #666666;
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding: 0 3.125%;
+}
+.panel-cm .phone-panel .phone-content {
+  background-color: #fafafa;
+  padding: 0 3.125%;
+}
+.panel-cm .phone-panel .input-wrap {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #d7d7d7;
+  -webkit-border-radius: 0;
+  -webki-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.panel-cm .phone-panel .input-wrap input {
+  background-color: transparent;
+}
+.panel-cm .phone-panel .yzm {
+  margin-bottom: 20px;
+}
+.panel-cm .phone-panel .yzm .input-wrap {
+  margin-right: 0;
+  border-right: 1px solid #d7d7d7;
+}
+.panel-cm .phone-panel .yzm > button {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -webki-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #d7d7d7;
+}

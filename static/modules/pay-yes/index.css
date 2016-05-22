@@ -1,0 +1,120 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.tip {
+  background-color: #ffffff;
+  font-size: 15px;
+  padding: 20px 26px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.tip b {
+  color: #ea0079;
+  font-weight: normal;
+}
+section.pay-way .section-title {
+  color: #515f64;
+  font-size: 12px;
+  line-height: 1;
+  padding: 0 10px 9px;
+}
+section.pay-way ul {
+  background-color: #ffffff;
+  padding: 16px 1.875%;
+  font-size: 0;
+}
+section.pay-way ul:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+section.pay-way ul li {
+  border: 2px solid #fff;
+  -webkit-border-radius: 4px;
+  -webki-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5px 0;
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+section.pay-way ul li.active {
+  border-color: #06be04;
+}
+section.pay-way ul li i {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  height: 50px;
+  margin-bottom: 10px;
+}
+section.pay-way ul li label {
+  color: #595f64;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+section.pay-way ul li .icon-wx {
+  background-image: url(/static/images/pay-wx.png);
+}
+section.pay-way ul li .icon-alipay {
+  background-image: url(/static/images/pay-alipay.png);
+}
+section.pay-way ul li .icon-upay {
+  background-image: url(/static/images/pay-upay.png);
+}
+section.pay-way ul li .icon-yue {
+  background-image: url(/static/images/pay-yue.png);
+}
+footer {
+  background-color: #ffffff;
+  padding: 5px 3.125% 8px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer .pay-val {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+footer .pay-val label {
+  margin-right: 4px;
+}
+footer .price {
+  color: #ea0079;
+}
+footer .price b {
+  margin-left: 2px;
+  font-weight: normal;
+}

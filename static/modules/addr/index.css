@@ -1,0 +1,81 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.icon-radio {
+  display: inline-block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAY1BMVEUAAADX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f////X19f4+Pjc3Nzu7u7q6urf39/8/Pzl5eXi4uLx8fHv7++57rPOAAAAFXRSTlMAD8bLUjoDz7oe7de3ppuTkGnDbFrrfigTAAAA/0lEQVQ4y42U6ZKDIBAGR/BMjJqDBuORvP9Tbu3hFqsUS//uguFjZsQne3Rag9bdI5MweY1HnQeUQoFb39YaY+17daCKnVIOMI3GY5xgKP8U08LT7HhCm3nOGWfNAes4/1ply+o5nrXSbjcO2zmhs4afd8HmHC34fuPNr/lY/e0rQyYTYeIzVcUYk0aUSIMzURyNXFni0sJVLrzi0ouLVNi4ZKnkxByXZk4C5h8gSUq6LqnwpAiSwkz6lpQPTmqVhKZT6e0rfWwQ+m2katY5GPZKXSYO52bV4TGvM/Eo+9DC6Mv96tHglm31LA50EVpiCg+VS5jm3ukKKt3dG/H4AKDlVGE+Vz76AAAAAElFTkSuQmCC');
+  width: 18px;
+  height: 18px;
+}
+.addr-list {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.addr-list > li {
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  padding: 14px 3.125%;
+}
+.addr-list > li.sel .icon-radio {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAASFBMVEUAAAAGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQGvgQ+mWYmAAAAF3RSTlMAuAluEMZpy89RPB7uptebk5DDdVpUNlWVTL8AAADaSURBVDjLjZPbDoIwEESnYi/QVlDU+f8/NUFjrwucp304TaabWeRcn7O1pLXz84o+o2KGGtHy1qzQb1Tc2eFehlHsoi6Zc6PALX1AUUS1eeRcE3eZNumxLz22HVIicGMEoMXMv8VowIvOBet38jCyM/xGg3joMMIdOnQI/zkKDgP+4wpTOgnkr03fIUJttU6AY2UlJwWPLK3WYYSpm9g4NPDSfhIe0KW1No5OVZEZT5ROn68vlj1nOXtS549TPvPkiLkWVEy2VuyElpcu1vNCHz/M1pHOzoNHxge45lPcD93j+QAAAABJRU5ErkJggg==');
+}
+.addr-list .dib {
+  vertical-align: middle;
+}
+.addr-list .radio-wrap {
+  width: 9%;
+}
+.addr-list ul {
+  color: #666666;
+  font-size: 12px;
+  width: 76.66666667%;
+}
+.addr-list ul > li {
+  margin-bottom: 8px;
+}
+.addr-list ul > li:last-child {
+  margin-bottom: 0;
+}
+.addr-list .edit-wrap {
+  text-align: right;
+  width: 14.33333333%;
+}
+.addr-list .edit {
+  color: #ea0079;
+}
+footer {
+  padding: 0 3.125%;
+}
+footer .btnl {
+  margin-bottom: 10px;
+}
+footer .btnl-default {
+  color: #ea0079;
+}

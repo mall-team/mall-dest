@@ -1,0 +1,132 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.copyright {
+  margin-top: 20px;
+}
+.icon-arrow {
+  display: inline-block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAK1JREFUeNqc1D0KwkAQBeD1xUaw8gCexLSChxSscgXB1iL3CNim8gC+gQmEsD9vHHjMbsjH5meT3f0xJNaB6ZhvEgvMkXkxTx/L8MScmUsEG5yY3ruM4T2MsRqHMDZzGSNzTMIoXEkTo3L/VYzGUy9iCO86i5Hi1akr2nZ8ex+Zq30M+Ae1ViyiGqyiEmyiHJTQFspoDUNogWFktWdm304fFS3QTrz5XP49/gQYAGpWQfLBEPgTAAAAAElFTkSuQmCC');
+  width: 7px;
+  height: 12px;
+}
+.act-nav {
+  background-color: #fff;
+  display: box;
+  display: -ms-box;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin-bottom: 10px;
+}
+.act-nav > li {
+  flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.act-nav > li a {
+  color: #666666;
+  display: inline-block;
+  line-height: 35px;
+  font-size: 15px;
+  padding: 0 5px;
+}
+.act-nav > li.active a {
+  color: #ea0079;
+  border-bottom: 2px solid #ea0079;
+}
+.act-list {
+  background-color: #fff;
+  padding-left: 3.125%;
+}
+.act-list > li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 3.22580645% 10px 0;
+}
+.act-list > li a {
+  display: block;
+  display: box;
+  display: -ms-box;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  position: relative;
+}
+.act-list > li:last-child {
+  border-bottom: 0;
+}
+.act-list .img-wrap {
+  display: block;
+  width: 70px;
+  margin-right: 10px;
+}
+.act-list .img-wrap:before {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.act-list .act-info {
+  display: block;
+  flex: 2;
+  -ms-flex: 2;
+  -webkit-flex: 2;
+  box-flex: 2;
+  -ms-box-flex: 2;
+  -webkit-box-flex: 2;
+  text-align: center;
+}
+.act-list .act-title {
+  text-align: left;
+  padding-right: 8.33333333%;
+  padding-top: 8px;
+  margin-bottom: 15px;
+  min-height: 34px;
+}
+.act-list .act-state {
+  text-align: right;
+  font-size: 13px;
+  color: #ea0079;
+}
+.act-list .act-state.doing {
+  color: #06be04;
+}
+.act-list .act-state.cancel {
+  color: #94979e;
+}
+.act-list .icon-arrow {
+  position: absolute;
+  right: 3.22580645%;
+  top: 11px;
+}

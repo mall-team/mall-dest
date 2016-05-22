@@ -1,0 +1,93 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.img-container img {
+  width: 100%;
+}
+.login-wrap {
+  position: relative;
+}
+.phone-panel {
+  padding: 0 12.5%;
+  position: absolute;
+  bottom: -52%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.phone-panel .btnl,
+.phone-panel .btnl:active {
+  color: #fff;
+  background-color: #e72435;
+  letter-spacing: 5px;
+}
+.input-wrap {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 2.08333333%;
+}
+.yzm {
+  margin-bottom: 4.16666667%;
+}
+.yzm .input-wrap {
+  margin-bottom: 0;
+  margin-right: 7px;
+}
+.yzm > button {
+  border: 1px solid #969696;
+  background-color: transparent;
+  color: #969696;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.yzm > button.disabled {
+  width: 90px;
+  border-color: #c8c8c8;
+  color: #c8c8c8;
+}
+.alert .alert-content {
+  padding: 0;
+  background-color: transparent;
+}
+.register-suc,
+.pay-suc {
+  display: block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(/static/images/langsha/r-suc.png);
+  width: 100%;
+  overflow: hidden;
+}
+.register-suc:before,
+.pay-suc:before {
+  content: '';
+  display: block;
+  margin-top: 74.35064935%;
+}
+.pay-suc {
+  background-image: url(/static/images/langsha/pay-suc.png);
+}

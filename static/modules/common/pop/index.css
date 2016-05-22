@@ -1,0 +1,77 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.pop {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  z-index: 2000;
+  overflow: hidden;
+}
+.pop .mask {
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.pop .container {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  width: 100%;
+  z-index: 2;
+}
+.pop .close {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA1CAYAAADh5qNwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAaVJREFUeNrc2j1KBEEQBeDxuQgeQDASjAy8xB5iL+EpFgwNJhI3M/YYgpfQdCNhwVQwshpnlmHZmemfquoqCx50T0cfNR0U9Mnj5rn5J3VG+QkLDD5eUS6dglaU986wR4XNG+XVISyAXijX3XqPCm37ptw4g/WgU8o9pR2iPilLyocj2CFo3R8M75Qn2CjoEOUFNgk6hrIOmwWNoazCokBTKGuwaNAcygosCRSDqg1LBsWiasGyQCkobVg2KBWlBSsC5aCkYcWgXJQUjAVUguKGsYFKUVwwVhAHqhTGDuJC5cJEQJyoVJgYiBsVCxMFSaDmYOIgKdQY7E4DJIk6BnvSAEmjelg72O8oG+l5RRq16joU6otyoTG2QBg0vEO3WvMYlEBrzXkMSiDVQROKIDUYlEEqMFQAicNQCSQKQ0WQGAyVQSIwGACxw2AExAqDIRAbDMZALDAYBBXDYBRUBINhUDYMxkFZMDgAJcPgBJQEgyNQNAzOQFEwOATNwgIqvGh8cAaahC2av7d+y65bbeOvelgAnYcmLbqDrVPQISz8ddtfAQYAwbv4BzFjGkgAAAAASUVORK5CYII=');
+  width: 27px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+}
+.pop .title {
+  border-bottom: 1px solid #eeeeee;
+  color: #515f64;
+  font-size: 15px;
+  height: 57px;
+  line-height: 56px;
+  text-align: center;
+}

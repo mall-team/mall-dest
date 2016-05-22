@@ -1,0 +1,245 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+section {
+  background-color: #fff;
+}
+section.text-wrap {
+  position: relative;
+}
+section.text-wrap textarea {
+  border: 0;
+  -webkit-border-radius: 5px;
+  -webki-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 160px;
+  padding: 3.125% 4.6875%;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+section.text-wrap label {
+  display: block;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #999;
+  z-index: 2;
+}
+section.text-wrap label .extra {
+  color: red;
+}
+section.phone-wrap {
+  height: 44px;
+  line-height: 42px;
+  padding: 0 10px;
+}
+section.phone-wrap label {
+  color: #666666;
+  vertical-align: middle;
+}
+section.phone-wrap input {
+  letter-spacing: 1px;
+  padding-left: 27px;
+  padding: 10px 0 10px 27px;
+  width: 70%;
+  vertical-align: middle;
+}
+footer {
+  margin: 20px 3.125% 0;
+}
+.uploader-section {
+  font-size: 0;
+  margin: 0 0 20px;
+  padding: 0 4.6875% 0 4.6875%;
+}
+.uploader-section:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.uploader-section .item {
+  float: left;
+  width: 25.86206897%;
+  margin-right: 3.44827586%;
+  margin-bottom: 3.44827586%;
+  position: relative;
+}
+.uploader-section .item:before {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.uploader-section .item:last-child {
+  margin-right: 0;
+}
+.uploader-section .item .item-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.uploader-section .item .close {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/static/images/close4.png');
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  overflow: hidden;
+  z-index: 100;
+}
+.uplaoder {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  position: relative;
+  overflow: hidden;
+}
+.uplaoder.loading .upload-default {
+  display: none;
+}
+.uplaoder.loading .loading-icon-wrap {
+  display: block;
+}
+.uplaoder .upload-default {
+  background: #ffffff url(/static/images/comment/icon-uploader.png) no-repeat center center;
+  -webkit-background-size: 34px 34px;
+  background-size: 34px 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.uplaoder .loading-icon-wrap {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.uplaoder .loading-icon-wrap .loading-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.uplaoder input[type="file"] {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500%;
+  height: 500%;
+  z-index: 10;
+}
+.pre-view {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.star-bar {
+  position: relative;
+  width: 175px;
+  height: 25px;
+}
+.star-bar .star-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+.star-bar .star-gray,
+.star-bar .star-active {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(/static/images/star.png);
+  width: 175px;
+  height: 25px;
+}
+.star-bar .star-gray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.star-bar .star-active {
+  background-image: url(/static/images/star-active.png);
+}
+.star-section {
+  background-color: #fff;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 4.375%;
+  font-size: 0;
+}
+.star-section > label {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.star-section .star-bar {
+  display: inline-block;
+  vertical-align: middle;
+  height: 44px;
+}
+.star-section .star-bar .star-inner,
+.star-section .star-bar .star-gray {
+  top: 50%;
+  margin-top: -12.5px;
+}

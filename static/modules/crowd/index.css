@@ -1,0 +1,211 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.icon-heart {
+  display: inline-block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/static/images/crowb/icon-heart.png');
+  width: 25px;
+  height: 22px;
+}
+.icon-share {
+  display: inline-block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/static/images/crowb/icon-share.png');
+  width: 22px;
+  height: 23px;
+}
+body > section {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.goods-item #bannerPager {
+  text-align: center;
+}
+.goods-item .img-wrap {
+  -webki-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.goods-item .img-wrap:before {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.goods-item .item-infos {
+  padding: 11px 3.90625% 12px;
+}
+.goods-item .item-infos .item-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.goods-item .item-infos .price-wrap {
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.goods-item .item-infos .price {
+  color: #ea0079;
+  font-size: 18px;
+}
+.goods-item .item-infos .price i {
+  font-style: normal;
+  margin-right: 2px;
+}
+.goods-item .item-infos .price b {
+  font-weight: normal;
+}
+.goods-item .item-infos .has-amount {
+  color: #777;
+  font-size: 12px;
+  line-height: 1;
+}
+.progress {
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  -webki-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress .progress-bar {
+  background-color: #85b3fd;
+  height: 4px;
+  width: 50%;
+}
+.progress-section {
+  padding: 16px 3.90625%;
+}
+.progress-section .progress {
+  margin-bottom: 8px;
+}
+.progress-section .progress-text {
+  color: #666666;
+  font-style: 12px;
+  line-height: 1;
+}
+.progress-section .progress-text b {
+  color: #ea0079;
+  font-weight: normal;
+}
+.intro-section {
+  padding: 12px 3.90625%;
+}
+.intro-section h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+.intro-section ol {
+  color: #666666;
+  font-style: 12px;
+  padding-left: 18px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.intro-section ol li {
+  list-style: decimal;
+}
+.intro-section ul {
+  color: #666666;
+  font-style: 12px;
+  line-height: 1.5;
+}
+.goods-des .section-title {
+  font-size: 15px;
+  line-height: 37px;
+  padding: 0 3.125%;
+}
+.goods-des .goods-des-content img {
+  width: 100%;
+}
+.goods-des table {
+  width: 100%!important;
+}
+footer {
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  max-height: 640px;
+  z-index: 1000;
+  display: box;
+  display: -ms-box;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  font-size: 0;
+}
+footer .btnl {
+  background-color: #e52961;
+  -webkit-border-radius: 0;
+  -webki-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+footer .icon-share,
+footer .icon-heart {
+  margin-bottom: 3px;
+}
+footer .atten-btn,
+footer .share-btn {
+  color: #999999;
+  display: block;
+  width: 25%;
+  text-align: center;
+  padding-top: 6px;
+}
+footer .atten-btn > p,
+footer .share-btn > p {
+  font-size: 12px;
+  -webkit-transform: scale(0.83333333);
+  -moz-transform: scale(0.83333333);
+  -o-transform: scale(0.83333333);
+  transform: scale(0.83333333);
+}

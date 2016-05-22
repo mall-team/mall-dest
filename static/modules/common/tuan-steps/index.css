@@ -1,0 +1,123 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.tuan-steps {
+  font-size: 0;
+}
+.tuan-steps li {
+  display: inline-block;
+  vertical-align: top;
+}
+.tuan-steps .step {
+  border: 1px solid #d7d7d7;
+  -webkit-border-radius: 2px;
+  -webki-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  width: 62px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.tuan-steps .split {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKpJREFUeNqc1D0KwkAQBeD1xUZIlQN4Em0FTyyktfAI2wu2Vh7ANzCBEPbnTQYesxvysfnZ5JBzTqwTMzC/JBaYkZmZh49lODFn5hLBBt/M1buM4T2MsRqHMDZzGaNwTMKoXEkXo3H/TYzOU69iCO+6iJHiNagr2nZ8en8xN/sYsAf1VqyiFmyiGuyiEpTQFspoDUNogWFkdWS+vp0+KlqgnXj3ufx7/AswAMr4QpTlMcE6AAAAAElFTkSuQmCC);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 7px 12px;
+  width: 17px;
+  height: 54px;
+}
+.tuan-steps .tg {
+  -webkit-border-radius: 2px;
+  -webki-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  text-align: left;
+  padding: 1px 0 0 3px;
+  overflow: hidden;
+}
+.tuan-steps .tg:before {
+  content: '';
+  display: block;
+  background-color: #d7d7d7;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  width: 62px;
+  height: 54px;
+}
+.tuan-steps .tg i {
+  font-style: normal;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  z-index: 2;
+}
+.tuan-steps.steps-1 > .step:nth-child(1) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-2 > .step:nth-child(1) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-2 > .step:nth-child(3) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-3 > .step:nth-child(1) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-3 > .step:nth-child(3) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-3 > .step:nth-child(5) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-4 > .step:nth-child(1) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-4 > .step:nth-child(3) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-4 > .step:nth-child(5) .tg:before {
+  background-color: #00b600;
+}
+.tuan-steps.steps-4 > .step:nth-child(7) .tg:before {
+  background-color: #00b600;
+}

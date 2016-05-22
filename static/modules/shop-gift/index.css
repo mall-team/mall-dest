@@ -1,0 +1,85 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.shop-banner {
+  background-image: url(/static/images/shop-banner.png);
+  width: 100%;
+}
+.shop-banner:before {
+  content: '';
+  display: block;
+  margin-top: 50%;
+}
+.shop-tys {
+  padding: 10px 2.34375%;
+}
+.shop-tys > a {
+  display: block;
+  margin-bottom: 10px;
+}
+.shop-tys .img-wrap {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f3f4f6;
+}
+.shop-tys .shop-t1 {
+  background-image: url(/static/images/shop-t2.png);
+  width: 100%;
+  margin-bottom: 10px;
+}
+.shop-tys .shop-t1:before {
+  content: '';
+  display: block;
+  margin-top: 58.00653595%;
+}
+.shop-tys .shop-t2 {
+  background-image: url(/static/images/shop-t1.png);
+  width: 100%;
+}
+.shop-tys .shop-t2:before {
+  content: '';
+  display: block;
+  margin-top: 53.10457516%;
+}
+.shop-tys .shop-t3 {
+  background-image: url(/static/images/shop-t3.png);
+  width: 100%;
+}
+.shop-tys .shop-t3:before {
+  content: '';
+  display: block;
+  margin-top: 46.56862745%;
+}
+.shop-tys .shop-t4 {
+  background-image: url(/static/images/shop-t4.png);
+  width: 100%;
+}
+.shop-tys .shop-t4:before {
+  content: '';
+  display: block;
+  margin-top: 46.56862745%;
+}

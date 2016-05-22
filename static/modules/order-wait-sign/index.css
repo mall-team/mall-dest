@@ -1,0 +1,284 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+body > section,
+form > section {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.icon-addr {
+  display: inline-block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAjCAMAAAC94eqZAAAAzFBMVEUAAACUl56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul56Ul57///+Ul56tr7X19fa0t7zr6+3b3d/U1di9v8Seoaf4+Pnx8fLv7/Di4+XQ0tW6vMH8/Pzn6OnX2NrOz9LGyMy/wcW3ub6ytLmkp63t7u/g4OLJys6ws7ioq7CmqK6Ym6Hk5efQ2zAlAAAAI3RSTlMAnQr2yhPgKPnRqAbs2L1pXToe5+SykIZ6VEw1t6uAcEIYRTtE+b0AAAGRSURBVCjPbZLpWuowEECHbuybbIp61ZsTCogLyCZc1/v+72TSUtqq51cmZ+b7kpmRhPbAK+N6F1cnkueszpHLYkbcNEBv/v9TT+PJYgZ/juY84GOuEkZb6DmxKdYI71SGxxm9qjXVMs8qz/2MU6tO0U82Hm/056fejKM6SuahTo0XG91y4NZGCwoiLd5iU+q3HafdL0XuAdeRClNznOCeH57rMjEXO4ZS58GcNE050ESbizUDcbmz9YEcCWzyhIqAyVlRSFWBlVIv9KRmq6Z5NY2rPMxPlnip8lgqNacf56h3rhNzzXv0maa02JnTK10/Nn6XV3PxQVEcl5E5hgRn0eACwqhTdRNUWNtRhEC5DIQ28zma2RCtLHMNoOdR6ynd2KEETFXM2LY96a6lhVZ5lnYmh1mu82rHQGKG7HMLMKXmyIELFhkzmtGShBOXVapCLiWlyX6UmC0dXzI0jlv1CH8li99hm+5ZnjbRSow0FfnOFZidf8Nz5AcF9vchdV9+Um2g6RblN3yPTsbkXSNnvgB2ckySWLQSQwAAAABJRU5ErkJggg==');
+  width: 13px;
+  height: 18px;
+}
+.order-info {
+  padding: 10px 0 2px 3.125%;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: auto !important;
+  user-select: auto !important;
+}
+.order-info p {
+  margin-bottom: 6px;
+  line-height: 1;
+}
+.order-info p.date {
+  color: #999999;
+}
+.order-info p.date span {
+  margin-right: 10px;
+}
+.order-info .timer {
+  background-color: #ea0079;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  line-height: 20px;
+  padding: 0 9px 0 8px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  right: 0;
+  font-size: 12px;
+}
+.address {
+  background-color: #ffffff;
+  padding: 15px 17.8125% 14px 10.15625%;
+  margin-top: 10px;
+  position: relative;
+}
+.address.no-address ul {
+  display: none;
+}
+.address.no-address ul.no-addr {
+  display: block;
+}
+.address > a {
+  display: block;
+  cursor: pointer;
+}
+.address .icon-addr {
+  position: absolute;
+  left: 3.125%;
+  top: 50%;
+  margin-top: -9px;
+}
+.address .addr-user {
+  font-size: 15px;
+  line-height: 1;
+}
+.address .addr-addr {
+  font-size: 12px;
+  color: #666666;
+}
+.address ul li {
+  margin-bottom: 8px;
+}
+.address ul li:last-child {
+  margin-bottom: 0;
+}
+.address ul.no-addr {
+  display: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+}
+.address ul.no-addr li {
+  margin-bottom: 0;
+}
+.address .user-name {
+  margin-right: 15px;
+}
+.address .icon-arrow {
+  position: absolute;
+  top: 35px;
+  right: 3.125%;
+}
+.goods-list {
+  background-color: #ffffff;
+  padding-left: 3.125%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.goods-list > li {
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0;
+  position: relative;
+  padding: 8px 3.22580645% 8px 0;
+}
+.goods-list .img-wrap {
+  -webki-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  width: 20.33333333%;
+  overflow: hidden;
+  margin-right: 3.33333333%;
+  vertical-align: top;
+}
+.goods-list .img-wrap:before {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.goods-list .goods-info {
+  display: inline-block;
+  font-size: 12px;
+  color: #666666;
+  width: 52.33333333%;
+  vertical-align: top;
+}
+.goods-list .goods-title {
+  margin-bottom: 8px;
+}
+.goods-list .goods-attr {
+  color: #999999;
+  margin-bottom: 9px;
+}
+.goods-list .price-wrap {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  text-align: right;
+}
+.goods-list .price {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.goods-list .goods-amount {
+  color: #666666;
+  font-size: 15px;
+  line-height: 1;
+}
+.goods-list .goods-state {
+  padding-right: 3.22580645%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.goods-list .goods-state .state {
+  color: #ea0079;
+  width: 16.66666667%;
+  line-height: 25px;
+}
+.goods-list .goods-state .btn-wrap {
+  width: 83.33333333%;
+  text-align: right;
+}
+.goods-list .goods-state .btnl {
+  margin-left: 10px;
+  line-height: 25px;
+  width: 70px;
+  font-size: 12px;
+  -webkit-border-radius: 3px;
+  -webki-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.goods-list .goods-state .btnl.btnl-border,
+.goods-list .goods-state .btnl.btnl-default {
+  line-height: 23px;
+  width: 68px;
+}
+.price > label {
+  margin-right: 3px;
+}
+.price i {
+  font-style: normal;
+  margin-right: 2px;
+}
+.price b {
+  font-weight: normal;
+}
+.goods-trans {
+  font-size: 15px;
+}
+.goods-trans ul {
+  padding-left: 3.125%;
+}
+.goods-trans li {
+  line-height: 45px;
+  padding-right: 3.22580645%;
+  border-bottom: 1px solid #eeeeee;
+}
+.goods-trans li:last-child {
+  border-bottom: 0;
+}
+.goods-trans label {
+  margin-right: 10px;
+}
+.goods-trans .price-total {
+  color: #ea0079;
+}
+.money-calculate {
+  font-size: 12px;
+  padding: 16px 0;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.money-calculate .calculate {
+  margin-bottom: 11px;
+}
+.money-calculate .result {
+  color: #ea0079;
+}
+.money-calculate .result .price {
+  margin-left: 3px;
+}
+.money-calculate .frost {
+  margin-left: 8px;
+}
+.sold-panel {
+  margin-top: -15px;
+}
+.sold-panel .title {
+  color: #666666;
+  font-size: 15px;
+  line-height: 48px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+}
+.sold-panel .desc {
+  color: #999999;
+  font-size: 15px;
+  margin: 12px 0 15px;
+}
+.sold-panel img {
+  display: block;
+  background-color: #fff;
+  width: 79.44444444%;
+  min-height: 225px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}

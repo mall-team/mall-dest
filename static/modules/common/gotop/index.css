@@ -1,0 +1,40 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.icon-gotop {
+  display: none;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAeFBMVEUAAAAAAAAdHR3f398AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5OTkAAAAAAAAAAADOzs7r6+sAAAAAAAAAAADV1dXNzc0rKyv///+QuGS4AAAAJ3RSTlOzALryBqiwk0dDL6WBrFBpWCUbC6J8iU4VmpXAZmA87PcrKhLv7L38iYCYAAABx0lEQVRYw73Y61KDMBCG4a/thnBIaDkV2qr17P3foVF0VFrYwGZ8f5bM86sDm8VqoiK+bXStAFXr5jYups6OQl3bKAxSTfs0D6Jkj+tFJiFvqNplmCjbVV4Q5QpMWU48lB7g0SFlINrCsy1NQaWGd8dyHEoVZqTSMSiJMKsouQ7FmF18DbqLMLvo7hJKnbNASodQqbAoVf6FSGNhmv5AWyxu+xt6hKDHX5CGIP0D5RCVf0NVBlGq+oJ2ELbrIcogLKNPKIG45BPaQ9z+A+oQoM5BLS5648Kw1kEmBGQcZBEgSygQpAIxghTjBiFyjEGQGmgESaMG2+n5FVw1LLjW92/3azAp8M7G/QM3rISIdzanjYeU8c4aa1ayOHg44KUa2sfhJQ3DOz6SwQ3r+EiOiTnHT4pRMI6nVIAs7/CSJawM7/CS6V/+nMP/3jqo48/zT7r+A8mc5p/tRz7Z51Gnl84YlIwMEaezc8all9PFEBF2rFlVSjpohRr9Qg+jrgcIegg/sLvoiIUdKeylRn7NCn7xk19Fw1+Ow1/XXeVRsEAQrzTkSxb52kfl9F+LKPlq7LIuNxaDrMmZZd31qF8fWif060OaOPwOq5kiy9+Hy88AAAAASUVORK5CYII=');
+  width: 36px;
+  height: 36px;
+  position: fixed;
+  right: 4.6875%;
+  bottom: 65px;
+  z-index: 2000;
+  opacity: 0;
+}

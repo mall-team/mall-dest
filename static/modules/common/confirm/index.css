@@ -1,0 +1,46 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.confirm.alert-msg .confirm-btns {
+  text-align: center;
+}
+.confirm.alert-msg .confirm-btns .btn-no {
+  display: none;
+}
+.confirm.alert-msg .confirm-btns .btn-yes {
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+  color: #666666;
+}
+.confirm .confirm-content {
+  font-size: 15px;
+  padding: 10px 0 25px;
+  text-align: center;
+}
+.confirm .confirm-btns .btnl {
+  display: inline-block;
+  width: 48.27586207%;
+}
+.confirm .confirm-btns .btnl.first-child {
+  margin-right: 10px;
+}

@@ -1,0 +1,233 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.text-left {
+  text-align: left;
+}
+.bg-1 {
+  background-color: #dd054d;
+}
+.bg-2 {
+  background-color: #302f3c;
+}
+.bg-3 {
+  background-color: #e10154;
+}
+.item-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.img-wrap {
+  position: relative;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: 微软雅黑;
+  line-height: 1;
+  font-size: 0;
+}
+.section {
+  position: relative;
+}
+.section .section-inner {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 990px;
+  height: 100%;
+  margin-left: -495px;
+  z-index: 2;
+}
+.header {
+  position: relative;
+}
+.header .img-wrap {
+  width: 1440px;
+  margin: 0 auto;
+}
+.container .img-wrap {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+.send-red {
+  color: #d41048;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: 448px;
+  left: 514px;
+  width: 408px;
+  height: 134px;
+}
+.send-red p {
+  margin-top: 20px;
+}
+.send-red .money {
+  font-size: 52px;
+}
+.send-red .money small {
+  font-size: 24px;
+  margin-left: 5px;
+}
+.send-red .money-ani {
+  -webkit-animation: shan 0.5s ease-in;
+  animation: shan 0.5s ease-in;
+  display: inline-block;
+}
+@-webkit-keyframes shan {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+.section-ercode {
+  padding-bottom: 600px;
+}
+.section-ercode .ercode-content {
+  width: 612px;
+  height: 368px;
+  margin: 35px auto 100px;
+  text-align: center;
+}
+.section-ercode .ercode-content img {
+  display: inline-block;
+  width: 245px;
+  height: 245px;
+  margin-bottom: 30px;
+}
+.section-ercode .ercode-content p {
+  color: #fff;
+  font-size: 30px;
+}
+.section-ercode .them-tip {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.section-ercode .them-list {
+  width: 850px;
+  margin: 0 auto;
+}
+.section-ercode .them-list li {
+  color: #fff;
+  text-align: center;
+  float: left;
+  width: 170px;
+  margin-right: 168px;
+}
+.section-ercode .them-list .first-child .img-inner {
+  background-image: url(/static/images/klj/xiao.jpg);
+}
+.section-ercode .them-list .second-child .img-inner {
+  background-image: url(/static/images/klj/default.png);
+}
+.section-ercode .them-list .last-child {
+  margin-right: 0;
+}
+.section-ercode .them-list .last-child .img-inner {
+  background-image: url(/static/images/klj/default.png);
+}
+.section-ercode .them-list .ceo .img-inner {
+  background-image: url(/static/images/klj/wu.png);
+}
+.section-ercode .them-list .wdf .img-inner {
+  background-image: url(/static/images/klj/wang.png);
+}
+.section-ercode .them-list .head-img {
+  background-color: #bc3c34;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -webki-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  position: relative;
+  margin-bottom: 26px;
+}
+.section-ercode .them-list .head-img:before {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.section-ercode .them-list .img-inner {
+  -webki-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  -webkit-border-radius: 50%;
+  -webki-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-repeat: no-repeat;
+}
+.section-ercode .them-list .img-inner:before {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.section-ercode .them-list .name {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.section-ercode .them-list .des {
+  font-size: 21px;
+  opacity: .6;
+  width: 100%;
+  line-height: 1.5;
+}
+.flash-item {
+  margin: 0 auto;
+  width: 480px;
+  height: 388px;
+  padding-bottom: 60px;
+}

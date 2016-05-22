@@ -1,0 +1,82 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  background-color: #fff;
+  font-family: arial, sans-serif, Microsoft YaHei;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  max-width: 640px;
+  margin: 0 auto;
+}
+img {
+  vertical-align: middle;
+}
+header {
+  border-bottom: 1px dotted #d7d7d7;
+  margin: 0 4.6875% 10px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.article-title {
+  color: #353b3f;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 11px 0 4px;
+}
+.article-date {
+  line-height: 1;
+}
+.article-date i {
+  display: inline-block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/static/images/app/icon-clock.png');
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.article-date span {
+  color: #7a7d88;
+  font-size: 12px;
+}
+.article-container {
+  padding: 0 4.6875% 15px;
+}
+.article-container img {
+  width: 100%!important;
+}

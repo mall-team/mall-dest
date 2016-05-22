@@ -1,0 +1,69 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.ad-layer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+}
+.ad-layer .mask {
+  background-color: #000;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.ad-layer .close {
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/static/images/close2.png');
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -20px;
+  right: -15px;
+}
+.ad-layer .ad-content {
+  display: block;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('/static/images/cut-ad.png');
+  width: 220.5px;
+  height: 238.5px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -110.25px;
+  z-index: 2;
+}

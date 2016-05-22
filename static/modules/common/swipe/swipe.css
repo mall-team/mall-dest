@@ -1,0 +1,77 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/*banner*/
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.swipe-wrap div img {
+  width: 100%;
+  vertical-align: middle;
+  /*display:block;*/
+}
+#bannerPager {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 100;
+  text-align: right;
+}
+#bannerPager span {
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 10px;
+}
+#bannerPager span a {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 4px;
+  margin-right: 4px;
+  -webki-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#bannerPager span a.sel {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANCAMAAACq939wAAAAWlBMVEUAAADu7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7qAHnqB33sgrnse7bu5+rtncbsa67rQ5rrNpTrL5DrIInqGYXsksHsjr+6kTWBAAAAEHRSTlMA3MIK9hLkzbeAd2VXI/rGS8cW3AAAAGBJREFUCNdNzkcSgCAQRNGewRwRDAS9/zVFQpV/1W/XCE1d03QTvmo+Lu+vg+sA1jKmGRgfmbtHrKbAMKqtYKuw/NHaAttiUAVqgKAz7ZMEMJN2UjpFc7zQ075TL5ATab2Mkgc07BXu4AAAAABJRU5ErkJggg==);
+}
+#bannerPager span a.nosel {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAb1BMVEX///8AAADqBHv3ncv6wd7qAXrrCX3+8PfqAHnqAHnqAHnqAHnqAHnvP5vqAHnwTaLxVabqAHn2j8T4q9P7zuXqAHnqAHnqAHnqAHnqAHnsE4PsE4PuNZXuNZXqAHnqAHn3os76xeHqAHnqAHnqAHnshJliAAAAJXRSTlOAAPufkf33hHL2V+TdzcXEv7ekmY2AdloXDe7t1NPNzJyQZ2NYKOeKmAAAAHBJREFUCNdVzkcShDAMRNGWHDA5p8mB+58RmQJc/FU/rQSSkjpN68UvCMyj6brmaRLP0SpsKTsKjWi3IfxynOV/FJ9AVSCOAqMYfOWrDWzfGMrAcsDM+pDmGeRuetfd+SedreTwrawjT5r6jDnrJ5krzcAEXLimVMYAAAAASUVORK5CYII=);
+}
