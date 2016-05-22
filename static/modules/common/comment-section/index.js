@@ -60,7 +60,7 @@ function initPageLoader() {
 		getHtml: function(pageNum, back) {
 
 			new Ajax().send({
-				url: '/Mall/Goods/moreComment',
+				url: $('#J-ajaxurl-moreComment').val(),
 				data: {
 					g: productId,
 					page: pageNum
@@ -154,7 +154,7 @@ function resetLayer(obj) {
  */
 function initSupport() {
 	new Ajax().send({
-		url: '/Mall/Goods/initProductLikeData',
+		url: $('#J-ajaxurl-initProductLikeData').val(),
 		data: {
 			g: productId
 		}
@@ -204,17 +204,9 @@ function support() {
 		Bubble.show('您已赞过，不能重复点赞');
 		return;
 	}
-	$cur.addClass('active');
+	$cur.addClass('active');	
 	$num.text(parseInt($num.text(), 10) + 1);
-	new Ajax().send({
-		url: '/Mall/Goods/setProductLike',
-		data: {
-			g: productId,
-			goodsName: productName,
-			act_id: $('#J-spe-id').val(),
-			spe: $('#J-goods-type').val()
-		}
-	}, function(result) {
+	new Ajax().send(Ajax.formatAjaxParams($cur), function(result) {
 		if (result.headImg) {
 			$('.support-list').prepend('<li style="background-image:url(' + result.headImg + ')"></li>').css('display', 'block');
 		}

@@ -1179,12 +1179,6 @@ body {
   background-color: #ffffff;
   border-bottom: 1px solid #eeeeee;
   font-size: 0;
-  display: box;
-  display: -ms-box;
-  display: -webkit-box;
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .goods-order:after {
   display: block;
@@ -1194,14 +1188,11 @@ body {
   width: 0;
   height: 0;
 }
-.goods-order > li {
-  flex: 1;
-  -ms-flex: 1;
-  -webkit-flex: 1;
-  box-flex: 1;
-  -ms-box-flex: 1;
-  -webkit-box-flex: 1;
+.goods-order > li.cat-panel {
+  display: inline-block;
+  width: 33.33%;
   text-align: center;
+  float: right;
 }
 .goods-order > li.cat-panel > a {
   color: #ea0079;
