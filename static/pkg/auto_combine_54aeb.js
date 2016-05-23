@@ -3158,7 +3158,7 @@ __p+='';
 }
 return __p;
 }({
-				list: result.goodslist
+				list: result.goodsList
 			}));
 		});
 
