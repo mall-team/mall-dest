@@ -3141,11 +3141,11 @@ __p+='';
 __p+='\r\n<div class="goods">\r\n\t<a href="/Mall/Goods/detail?g='+
 ((__t=( item.product_id ))==null?'':__t)+
 '">\r\n\t\t<div class="img-wrap" style="background-image: url('+
-((__t=( item.image_url ))==null?'':__t)+
+((__t=( item.imageUrl ))==null?'':__t)+
 ')"></div>\r\n\t\t<div class="goods-title">'+
-((__t=( item.product_name ))==null?'':__t)+
+((__t=( item.name ))==null?'':__t)+
 '</div>\r\n\t\t<div class="clearfix">\r\n\t\t\t<label class="price"><i>&yen;</i><b>'+
-((__t=( item.retail_price ))==null?'':__t)+
+((__t=( item.salePrice ))==null?'':__t)+
 '</b></label>\r\n\t\t\t';
  if(item.discount){ 
 __p+='\r\n\t\t\t<label class="btn btn-sm right">'+
