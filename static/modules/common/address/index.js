@@ -224,8 +224,8 @@ function save() {
 		url: $('#J-ajaxurl-address-save').val(),
 		data: {
 			id: curItem.id,
-			reName: name,
-			rePhone: phone,
+			name: name,
+			phone: phone,
 			provinceId: pro,
 			cityId: city,
 			districtId: region,
@@ -278,7 +278,19 @@ function _getAddr(id) {
 	for (; i < listData.length; i++) {
 		item = listData[i];
 		if (item.id == id) {
-			return item;
+			return {
+				id: item['id'],
+				province_name: item['provinceName'],
+				city_name: item['cityName'],
+				region_name: item['districtName'],
+				province_id: item['provinceId'],
+				city_id: item['cityId'],
+				district_id: item['districId'],
+				recipient_address: item['detailAddr'],
+				is_default: item['isDefault'],
+				phone: item['rePhone'],
+				realName: item['reName'],
+			};
 		}
 	}
 	return {};
@@ -342,45 +354,45 @@ function _openDetail() {
 	$delBtn.on('click', del);
 
 	if (!curItem.province_name) {
-		try {
-			getPos(function(lat, lng) {
-				if (lat && lng) {
-					new Ajax().send({
-						url: '/User/Center/getConsigneeInfo',
-						data: {
-							lat: lat,
-							lng: lng
-						}
-					}, function(result) {
-						var bdAddrs = result.addressComponent;
-						var ids = result.regionId;
+		// try {
+		// 	getPos(function(lat, lng) {
+		// 		if (lat && lng) {
+		// 			new Ajax().send({
+		// 				url: '/User/Center/getConsigneeInfo',
+		// 				data: {
+		// 					lat: lat,
+		// 					lng: lng
+		// 				}
+		// 			}, function(result) {
+		// 				var bdAddrs = result.addressComponent;
+		// 				var ids = result.regionId;
 
-						if (bdAddrs && ids.provinceId && ids.cityId && ids.districtId) {
-							curItem = {
-								province_name: bdAddrs.province,
-								city_name: bdAddrs.city,
-								region_name: bdAddrs.district,
-								province_id: ids.provinceId,
-								city_id: ids.cityId,
-								district_id: ids.districtId,
-								street: bdAddrs.street,
-								streetNum: bdAddrs.street_number,
-								phone: result.cellPhone,
-								realName: result.realName
-							}
-						}
-						_initAddrSel();
-					}, function() {
-						_initAddrSel();
-					});
-				} else {
-					_initAddrSel();
-				}
+		// 				if (bdAddrs && ids.provinceId && ids.cityId && ids.districtId) {
+		// 					curItem = {
+		// 						province_name: bdAddrs.province,
+		// 						city_name: bdAddrs.city,
+		// 						region_name: bdAddrs.district,
+		// 						province_id: ids.provinceId,
+		// 						city_id: ids.cityId,
+		// 						district_id: ids.districtId,
+		// 						street: bdAddrs.street,
+		// 						streetNum: bdAddrs.street_number,
+		// 						phone: result.cellPhone,
+		// 						realName: result.realName
+		// 					}
+		// 				}
+		// 				_initAddrSel();
+		// 			}, function() {
+		// 				_initAddrSel();
+		// 			});
+		// 		} else {
+		// 			_initAddrSel();
+		// 		}
 
-			});
-		} catch (e) {
+		// 	});
+		// } catch (e) {
 			_initAddrSel();
-		}
+		// }
 	} else {
 		_initAddrSel();
 	}
