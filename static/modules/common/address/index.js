@@ -143,10 +143,6 @@ function setDefault(evt) {
 	}, function() {
 		$radios.removeClass('selected');
 		$radio.addClass('selected');
-		if (curType == 'pop') {
-			Pop.hide();
-		}
-		selected && selected(_getAddr(id));
 	});
 }
 
@@ -332,9 +328,18 @@ function _initNodes() {
 	$addBtn = $container.find('.btn-add');
 
 	$container.on('click', '.radio', setDefault);
-	$container.on('click', '.addr-info', setDefault);
+	$container.on('click', '.addr-info', selCurrent);
 	$container.on('click', '.edit', edit);
 	$addBtn.on('click', add);
+}
+
+//选中当前
+function selCurrent() {
+	var id = $(this).parent().attr('addr-id');
+	if (curType == 'pop') {
+		Pop.hide();
+	}
+	selected && selected(_getAddr(id));
 }
 
 /**
