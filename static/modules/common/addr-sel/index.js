@@ -105,7 +105,7 @@ AddrSel.prototype = {
 	_getPro: function() {
 		var self = this;
 		new Ajax().send({
-			url: '/User/Center/getAllProvince'
+			url: '/api/UserAddress/getAllProvince'
 		}, function(result) {
 			var list = result.data;
 
@@ -128,7 +128,7 @@ AddrSel.prototype = {
 		var self = this;
 
 		new Ajax().send({
-			url: '/User/Center/getAllCity',
+			url: '/api/UserAddress/getAllCity',
 			data: {
 				province_id: self.addr.proId
 			}
@@ -155,7 +155,7 @@ AddrSel.prototype = {
 		var self = this;
 
 		new Ajax().send({
-			url: '/User/Center/getAllDistrict',
+			url: '/api/UserAddress/getAllDistrict',
 			data: {
 				city_id: self.addr.cityId
 			}

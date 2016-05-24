@@ -1173,7 +1173,7 @@ AddrSel.prototype = {
 	_getPro: function() {
 		var self = this;
 		new Ajax().send({
-			url: '/User/Center/getAllProvince'
+			url: '/api/UserAddress/getAllProvince'
 		}, function(result) {
 			var list = result.data;
 
@@ -1196,7 +1196,7 @@ AddrSel.prototype = {
 		var self = this;
 
 		new Ajax().send({
-			url: '/User/Center/getAllCity',
+			url: '/api/UserAddress/getAllCity',
 			data: {
 				province_id: self.addr.proId
 			}
@@ -1223,7 +1223,7 @@ AddrSel.prototype = {
 		var self = this;
 
 		new Ajax().send({
-			url: '/User/Center/getAllDistrict',
+			url: '/api/UserAddress/getAllDistrict',
 			data: {
 				city_id: self.addr.cityId
 			}
@@ -1429,15 +1429,15 @@ __p+='<div class="address-container">\r\n\t<ul class="address-list" style="max-h
 __p+='\r\n\t\t<li class="address-item dib-wrap" addr-id="'+
 ((__t=( item.id ))==null?'':__t)+
 '">\r\n\r\n\t\t\t<a class="radio ';
- if(item.is_default == 1){ 
+ if(item.isDefault == 1){ 
 __p+='selected';
  } 
 __p+=' dib"><i class="icon-radio"></i></a>\r\n\t\t\t<div class="addr-info dib">\r\n\t\t\t\t<p class="user"><span>'+
-((__t=( item.recipient_name ))==null?'':__t)+
+((__t=( item.reName ))==null?'':__t)+
 '，</span><span>'+
-((__t=( item.recipient_phone ))==null?'':__t)+
+((__t=( item.rePhone ))==null?'':__t)+
 '</span></p>\r\n\t\t\t\t<p class="addr">'+
-((__t=( item.province_name + item.city_name + item.region_name + item.recipient_address ))==null?'':__t)+
+((__t=( item.provinceName + item.cityName + item.districtName + item.detailAddr ))==null?'':__t)+
 '</p>\r\n\t\t\t</div>\r\n\t\t\t<a class="edit dib"><i class="icon-edit"></i></a>\r\n\t\t</li>\r\n\t\t';
  }) 
 __p+='\r\n\t</ul>\r\n\t<div class="btn-add dib-wrap">\r\n\t\t<span class="dib add-wrap"><i class="icon-add dib"></i></span>\r\n\t\t<label class="dib">新增地址</label>\r\n\t\t<span class="arrow-wrap dib"><i class="icon-arrow dib"></i></span>\r\n\t</div>\r\n</div>';
@@ -1520,7 +1520,7 @@ function getList(back, isOpenList) {
 
 	// if (!listData) {
 	new Ajax().send({
-		url: '/User/Center/myAddressList',
+		url: $('#J-ajaxurl-address-list').val(),
 		type: 'get'
 	}, function(result) {
 		listData = result.data;
@@ -1549,7 +1549,7 @@ function setDefault(evt) {
 	// 	return;
 	// }
 	new Ajax().send({
-		url: '/User/Center/setDefaultAddr',
+		url: url: $('#J-ajaxurl-address-setDefault').val(),
 		data: {
 			id: id
 		}
@@ -1634,15 +1634,15 @@ function save() {
 	}
 
 	new Ajax().send({
-		url: '/User/Center/editAddress',
+		url: $('#J-ajaxurl-address-save').val(),
 		data: {
 			id: curItem.id,
-			recipientName: name,
-			recipientPhone: phone,
+			reName: name,
+			rePhone: phone,
 			provinceId: pro,
 			cityId: city,
 			districtId: region,
-			recipientAddress: addr
+			detailAddr: addr
 		}
 	}, function() {
 
@@ -1666,7 +1666,7 @@ function del() {
 		msg: '您确定删除该地址吗？',
 		yesBack: function() {
 			new Ajax().send({
-				url: '/User/Center/delAddr',
+				url: $('#J-ajaxurl-address-del').val(),
 				data: {
 					id: curItem.id
 				}
