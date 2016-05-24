@@ -2745,7 +2745,7 @@ var Panel = {
 	_initSel: function() {
 		var self = this;
 
-		self._resetSku();
+		// self._resetSku();
 		amount.init();
 		$('#J-cm').delegate('label', EVENT_TAP, function(evt) {
 			var $cur = $(evt.target);
