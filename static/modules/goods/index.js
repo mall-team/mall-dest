@@ -547,8 +547,13 @@ function search_sku_key() {
  * 初始化购物车
  */
 function resetCart() {
+	var ajaxUrl = $('#J-ajaxurl-initCart').val();
+
+	if(ajaxUrl){
+		return;
+	}
 	new Ajax().send({
-		url: $('#J-ajaxurl-initCart').val()
+		url: ajaxUrl
 	}, function(result) {
 		var num = +result.number;
 		var $cart = $('#J-cart-num');

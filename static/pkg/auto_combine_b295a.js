@@ -2336,13 +2336,18 @@ function showLayer(evt) {
  * @return {[type]} [description]
  */
 function initPageLoader() {
+	var ajaxUrl = $('#J-ajaxurl-moreComment').val();
+
+	if (ajaxUrl) {
+		return;
+	}
 	new PageLoader({
 		container: '#J-discuss-list',
 		seeMore: '.see-more',
 		getHtml: function(pageNum, back) {
 
 			new Ajax().send({
-				url: $('#J-ajaxurl-moreComment').val(),
+				url: ajaxUrl,
 				data: {
 					g: productId,
 					page: pageNum
@@ -2435,8 +2440,13 @@ function resetLayer(obj) {
  * @return {[type]} [description]
  */
 function initSupport() {
+	var ajaxUrl = $('#J-ajaxurl-initProductLikeData').val();
+
+	if (ajaxUrl) {
+		return;
+	}
 	new Ajax().send({
-		url: $('#J-ajaxurl-initProductLikeData').val(),
+		url: ajaxUrl,
 		data: {
 			g: productId
 		}
@@ -2486,7 +2496,7 @@ function support() {
 		Bubble.show('您已赞过，不能重复点赞');
 		return;
 	}
-	$cur.addClass('active');	
+	$cur.addClass('active');
 	$num.text(parseInt($num.text(), 10) + 1);
 	new Ajax().send(Ajax.formatAjaxParams($cur), function(result) {
 		if (result.headImg) {
@@ -3171,8 +3181,13 @@ function search_sku_key() {
  * 初始化购物车
  */
 function resetCart() {
+	var ajaxUrl = $('#J-ajaxurl-initCart').val();
+
+	if(ajaxUrl){
+		return;
+	}
 	new Ajax().send({
-		url: $('#J-ajaxurl-initCart').val()
+		url: ajaxUrl
 	}, function(result) {
 		var num = +result.number;
 		var $cart = $('#J-cart-num');
