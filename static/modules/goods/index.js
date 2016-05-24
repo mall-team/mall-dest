@@ -404,13 +404,14 @@ function addCar() {
 	// }
 	var url = $('#J-ajaxurl-addCart').val();
 	var data = {
-		productId: goods_id,
-		skuId: sku_info.skuId,
+		goodsId: goods_id,
+		skuAttr: sku_info.skuAttr,
+		skuValue: sku_info.skuValue,
 		// skuIds: sku_info.sku_id,
 		// skuTexts: sku_info.skuTexts,
 		// skuValues: sku_info.skuValues,
 		// skuValuesText: sku_info.skuValuesText,
-		productNumber: goods_number
+		amount: goods_number
 	};
 
 	new Ajax().send({
@@ -458,15 +459,16 @@ function quickBuy() {
 	}
 	var url = $('#J-ajaxurl-quickBuy').val();
 	var data = {
-		productId: goods_id,
-		skuId: sku_info.skuId,
+		goodsId: goods_id,
+		skuAttr: sku_info.skuAttr,
+		skuValue: sku_info.skuValue,
 		// skuIds: sku_info.sku_id,
 		// skuTexts: sku_info.skuTexts,
 		// skuValues: sku_info.skuValues,
 		// skuValuesText: sku_info.skuValuesText,
-		productNumber: goods_number,
-		spe: $('#J-goods-type').val(),
-		speId: $('#J-spe-id').val()
+		amount: goods_number,
+		// spe: $('#J-goods-type').val(),
+		// speId: $('#J-spe-id').val()
 	};
 
 
