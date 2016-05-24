@@ -12,14 +12,14 @@ var Util = require('common/util/index');
 var Amount = require('common/amount/index');
 var Alert = require('common/alert/alert');
 var LoginPop = require('common/login-pop/index');
-var Notice = require('notice/index');
+// var Notice = require('notice/index');
 var amount = new Amount();
 var CommentSection = require('common/comment-section/index');
 
 require('common/gotop/index');
 var globalGuide = new Guide();
 
-Notice.start();
+// Notice.start();
 
 Util.phpdataReady(function() {
 	var $share = $('#J-share');
@@ -436,11 +436,11 @@ function addCar() {
 
 
 function quickBuy() {
-	if ($('#spe_id').val() > 0) {
-		if ($('#spe_already_start').val() == 0) {
-			return false;
-		}
-	}
+	// if ($('#spe_id').val() > 0) {
+	// 	if ($('#spe_already_start').val() == 0) {
+	// 		return false;
+	// 	}
+	// }
 	var goods_id = $("#gid").val();
 	var sku_info = search_sku_key();
 	var goods_number = parseInt($('#J-cm-amount').find('.amount-val').text(), 10);
