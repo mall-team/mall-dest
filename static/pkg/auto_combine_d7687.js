@@ -1549,7 +1549,7 @@ function setDefault(evt) {
 	// 	return;
 	// }
 	new Ajax().send({
-		url: url: $('#J-ajaxurl-address-setDefault').val(),
+		url: $('#J-ajaxurl-address-setDefault').val(),
 		data: {
 			id: id
 		}
@@ -1804,7 +1804,7 @@ function _openDetail() {
 
 		// 	});
 		// } catch (e) {
-			_initAddrSel();
+		_initAddrSel();
 		// }
 	} else {
 		_initAddrSel();
