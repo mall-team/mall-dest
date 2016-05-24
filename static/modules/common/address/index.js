@@ -290,6 +290,8 @@ function _getAddr(id) {
 				is_default: item['isDefault'],
 				phone: item['rePhone'],
 				realName: item['reName'],
+				recipient_name: item['reName'],
+				recipient_phone: item['rePhone'],
 			};
 		}
 	}
@@ -302,7 +304,7 @@ function _getDefault() {
 
 	for (; i < listData.length; i++) {
 		item = listData[i];
-		if (item['is_default'] == 1) {
+		if (item['isDefault'] == 1) {
 			return item;
 		}
 	}
