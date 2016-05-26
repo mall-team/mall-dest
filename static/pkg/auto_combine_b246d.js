@@ -2549,7 +2549,7 @@ function showLayer(evt) {
 function initPageLoader() {
 	var ajaxUrl = $('#J-ajaxurl-moreComment').val();
 
-	if (ajaxUrl) {
+	if (!ajaxUrl) {
 		return;
 	}
 	new PageLoader({
@@ -2653,7 +2653,7 @@ function resetLayer(obj) {
 function initSupport() {
 	var ajaxUrl = $('#J-ajaxurl-initProductLikeData').val();
 
-	if (ajaxUrl) {
+	if (!ajaxUrl) {
 		return;
 	}
 	new Ajax().send({

@@ -1524,7 +1524,7 @@ function getList(back, isOpenList) {
 		url: $('#J-ajaxurl-address-list').val(),
 		type: 'get'
 	}, function(result) {
-		listData = result.data;
+		listData = result.data || [];
 		selected && selected(_getDefault());
 
 		if (isOpenList === undefined || isOpenList) {
@@ -1632,6 +1632,7 @@ function save() {
 
 	new Ajax().send({
 		url: $('#J-ajaxurl-address-save').val(),
+		type: 'post',
 		data: {
 			id: curItem.id,
 			name: name,
