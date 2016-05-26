@@ -159,7 +159,7 @@ body > section {
 }
 .cart-list .price {
   display: block;
-  color: #ea0079;
+  color: #00a671;
   line-height: 1;
   margin-top: 18px;
   font-size: 12px;
@@ -200,7 +200,7 @@ body > section {
   margin-right: 10px;
 }
 .goods-trans .price-total {
-  color: #ea0079;
+  color: #00a671;
 }
 .pay-method {
   background-color: transparent;
@@ -347,7 +347,7 @@ body > section {
   font-size: 12px;
 }
 .goods-pay .price {
-  color: #ea0079;
+  color: #00a671;
 }
 .goods-pay .btn-wrap {
   padding: 0 3.125%;

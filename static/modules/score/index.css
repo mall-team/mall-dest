@@ -36,7 +36,7 @@ body > section {
   position: relative;
 }
 .money-wrap .my-money .money {
-  color: #ea0079;
+  color: #00a671;
   font-size: 36px;
 }
 .money-wrap .my-money .money small {
@@ -69,8 +69,8 @@ body > section {
   line-height: 34px;
 }
 .nav > li.active a {
-  color: #ea0079;
-  border-bottom: 2px solid #ea0079;
+  color: #00a671;
+  border-bottom: 2px solid #00a671;
 }
 .nav a {
   display: block;
@@ -114,7 +114,7 @@ body > section {
   overflow: hidden;
 }
 .detail-list > li .price {
-  color: #ea0079;
+  color: #00a671;
   font-size: 15px;
   flex: 1;
   -ms-flex: 1;

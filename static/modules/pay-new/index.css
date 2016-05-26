@@ -102,7 +102,7 @@ form > section {
   margin-right: 10px;
 }
 .order-info .timer {
-  background-color: #ea0079;
+  background-color: #00a671;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   color: #fff;
@@ -245,7 +245,7 @@ section.cart-section {
   margin-right: 10px;
 }
 .goods-trans .price-total {
-  color: #ea0079;
+  color: #00a671;
 }
 .money-list {
   background-color: #fff;
@@ -348,7 +348,7 @@ section.cart-section {
   display: none;
 }
 .ticket-section .price {
-  color: #ea0079;
+  color: #00a671;
   margin-right: 8px;
 }
 .ticket-section .ticket-num {
@@ -356,7 +356,7 @@ section.cart-section {
 }
 .ticket-section .ticket-num b {
   font-weight: normal;
-  color: #ea0079;
+  color: #00a671;
   margin-right: 5px;
 }
 .ticket-section .ticket-money {
@@ -376,7 +376,7 @@ section.cart-section {
   margin-bottom: 11px;
 }
 .money-calculate .result {
-  color: #ea0079;
+  color: #00a671;
 }
 .money-calculate .result .price {
   margin-left: 3px;
@@ -415,7 +415,7 @@ footer.use-yue .btnl-yue {
   margin-top: -10px;
 }
 .error-tip b {
-  color: #ea0079;
+  color: #00a671;
   font-weight: normal;
 }
 .pay-types {

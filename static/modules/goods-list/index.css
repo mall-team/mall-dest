@@ -91,7 +91,7 @@ body {
   text-align: center;
 }
 .goods-order > li.cat-panel > a {
-  color: #ea0079;
+  color: #00a671;
 }
 .goods-order > li.cat-panel > a i {
   margin-right: 6px;
@@ -107,7 +107,7 @@ body {
   margin-right: 8px;
 }
 .goods-order > li.active a {
-  color: #ea0079;
+  color: #00a671;
 }
 .goods-order > li.active .icon-arrow-down {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAdCAYAAACnmDyCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKdJREFUeNrs0j0KgDAMBeD6s/cAQo8hOAhey5MJrh5E6OglNJEEgjStioNDAw9B+77BptjMaBKz07OIHSrNR5OhDGUoQ3+DGoh90bfUPSEHWSDzQ8xSB7sOoYrSPsAYabmP0AoZIP4mht8mOuupu/I/QqwX2KRgjHQSud6aF1gXwFQkdP0hjEdFtD26YjwqEltIicl3QSS12RKLIjh1Yl8Yq2IIziHAAGhaLqN0xr68AAAAAElFTkSuQmCC);
@@ -149,7 +149,7 @@ body {
   border-bottom: 0;
 }
 .cat-list > li.active > a {
-  color: #ea0079;
+  color: #00a671;
 }
 .cat-list > li > a {
   color: #313131;
@@ -162,7 +162,7 @@ body {
   overflow: hidden;
 }
 .cat-list > li > a:active {
-  color: #ea0079;
+  color: #00a671;
 }
 .goods-order-tm li {
   width: 33.125%;
@@ -320,7 +320,7 @@ body {
   margin-top: -2.5px;
 }
 .goods .price {
-  color: #ea0079;
+  color: #00a671;
   font-size: 15px;
 }
 .goods .price i {

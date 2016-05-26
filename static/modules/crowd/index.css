@@ -77,7 +77,7 @@ body > section {
   margin-bottom: 8px;
 }
 .goods-item .item-infos .price {
-  color: #ea0079;
+  color: #00a671;
   font-size: 18px;
 }
 .goods-item .item-infos .price i {
@@ -118,7 +118,7 @@ body > section {
   line-height: 1;
 }
 .progress-section .progress-text b {
-  color: #ea0079;
+  color: #00a671;
   font-weight: normal;
 }
 .intro-section {

@@ -57,8 +57,8 @@
   text-align: center;
 }
 .order-nav > li.active a {
-  color: #ea0079;
-  border-bottom: 2px solid #ea0079;
+  color: #00a671;
+  border-bottom: 2px solid #00a671;
 }
 .order-nav a {
   display: inline-block;
@@ -123,7 +123,7 @@
   font-weight: normal;
 }
 .order-item .state {
-  color: #ea0079;
+  color: #00a671;
 }
 .order-item .state.cancel {
   color: #999999;

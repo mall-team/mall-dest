@@ -169,7 +169,7 @@ section.warning p {
   margin-right: 3px;
 }
 .goods-item .amount-last b {
-  color: #ea0079;
+  color: #00a671;
   font-weight: normal;
 }
 .goods-item .item-title-wrap {
@@ -223,7 +223,7 @@ section.warning p {
 }
 .goods-item .price-low i,
 .goods-item .price-low b {
-  color: #ea0079;
+  color: #00a671;
 }
 .userinfo {
   padding: 12px 5.46875% 20px 4.6875%;
@@ -283,7 +283,7 @@ section.warning p {
   margin-right: 8px;
 }
 .userinfo .des .price {
-  color: #ea0079;
+  color: #00a671;
   font-size: 24px;
 }
 .cut-time {
@@ -363,7 +363,7 @@ section.warning p {
   padding: 10px 0 15px;
 }
 .cut-rule .title-tip {
-  color: #ea0079;
+  color: #00a671;
 }
 .cut-rule h3 {
   margin-bottom: 10px;
@@ -392,7 +392,7 @@ section.warning p {
   overflow: hidden;
 }
 .tab .tab-nav {
-  border: 1px solid #ea0079;
+  border: 1px solid #00a671;
   -webkit-border-radius: 3px;
   -webki-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -421,7 +421,7 @@ section.warning p {
 }
 .tab .tab-nav li.active {
   color: #fff;
-  background-color: #ea0079;
+  background-color: #00a671;
 }
 .tab .tab-content {
   border-top: 1px solid #d7d7d7;
@@ -509,7 +509,7 @@ section.warning p {
   font-size: 12px;
 }
 .record-item .record-price {
-  color: #ea0079;
+  color: #00a671;
   font-size: 15px;
   width: 24.66666667%;
   text-align: right;
@@ -576,7 +576,7 @@ footer {
   font-size: 0;
 }
 footer .btn {
-  background-color: #ea0079;
+  background-color: #00a671;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 0;
@@ -600,8 +600,8 @@ footer .btn {
 }
 footer .btn-buy {
   background-color: #fff;
-  border: 1px solid #ea0079;
-  color: #ea0079;
+  border: 1px solid #00a671;
+  color: #00a671;
   width: 48.33333333%;
   margin-right: 3.33333333%;
   display: inline-block;
@@ -813,7 +813,7 @@ footer .btn.full {
   padding: 30px 0 16px;
 }
 .cut-qrcode-panel h3 {
-  color: #ea0079;
+  color: #00a671;
   font-size: 18px;
   margin-bottom: 15px;
   line-height: 1;

@@ -157,7 +157,7 @@ a:visited {
 }
 .btn,
 a.btn {
-  background-color: #ea0079;
+  background-color: #00a671;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 0;
@@ -183,7 +183,7 @@ a.btn-sm {
  */
 .btnl,
 a.btnl {
-  background-color: #ea0079;
+  background-color: #00a671;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 0;
@@ -226,13 +226,13 @@ a.btnl-wx:active {
 }
 .btnl-border,
 a.btnl-border {
-  border: 1px solid #ea0079;
+  border: 1px solid #00a671;
   background-color: #ffffff;
-  color: #ea0079;
+  color: #00a671;
 }
 .btnl-border:active,
 a.btnl-border:active {
-  background-color: #ea0079;
+  background-color: #00a671;
   color: #fff;
 }
 .btnl-disabled,
@@ -255,7 +255,7 @@ a.btnl-disabled {
   margin-left: -16px;
   width: 24px;
   height: 24px;
-  border: 2px solid #ea0079;
+  border: 2px solid #00a671;
   border-radius: 24px;
   -webkit-animation: gif 1s infinite linear;
   animation: gif 1s infinite linear;
@@ -745,7 +745,7 @@ header .icon-order {
   font-size: 14px;
 }
 .service-alert-content .title b {
-  color: #ea0079;
+  color: #00a671;
   font-weight: normal;
 }
 .service-alert-content .tips {
@@ -1059,7 +1059,7 @@ form > section {
   margin-right: 10px;
 }
 .order-info .timer {
-  background-color: #ea0079;
+  background-color: #00a671;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   color: #fff;
@@ -1189,7 +1189,7 @@ form > section {
   padding-bottom: 10px;
 }
 .goods-list .goods-state .state {
-  color: #ea0079;
+  color: #00a671;
   width: 16.66666667%;
   line-height: 25px;
 }
@@ -1241,7 +1241,7 @@ form > section {
   margin-right: 10px;
 }
 .goods-trans .price-total {
-  color: #ea0079;
+  color: #00a671;
 }
 .money-calculate {
   font-size: 12px;
@@ -1254,7 +1254,7 @@ form > section {
   margin-bottom: 11px;
 }
 .money-calculate .result {
-  color: #ea0079;
+  color: #00a671;
 }
 .money-calculate .result .price {
   margin-left: 3px;

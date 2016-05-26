@@ -69,7 +69,7 @@ body > section {
   margin-bottom: 10px;
 }
 .tip b {
-  color: #ea0079;
+  color: #00a671;
   font-weight: normal;
 }
 .order-state {
@@ -335,7 +335,7 @@ body > section {
   line-height: 1;
 }
 .price-wrap .price-pay {
-  color: #ea0079;
+  color: #00a671;
   margin-bottom: 0;
 }
 .price-wrap .price-pay label {

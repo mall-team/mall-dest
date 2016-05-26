@@ -139,7 +139,7 @@ body > section {
   color: #999999;
 }
 .cart-list .price {
-  color: #ea0079;
+  color: #00a671;
   line-height: 1;
   margin-top: 18px;
 }
@@ -175,7 +175,7 @@ body > section {
   color: #666666;
 }
 .goods-trans .price-total {
-  color: #ea0079;
+  color: #00a671;
 }
 .goods-juan {
   color: #999999;
@@ -209,7 +209,7 @@ body > section {
   font-size: 15px;
 }
 .goods-pay .price {
-  color: #ea0079;
+  color: #00a671;
   font-size: 18px;
 }
 .goods-pay .btn-wrap {

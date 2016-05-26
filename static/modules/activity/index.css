@@ -63,8 +63,8 @@
   padding: 0 5px;
 }
 .act-nav > li.active a {
-  color: #ea0079;
-  border-bottom: 2px solid #ea0079;
+  color: #00a671;
+  border-bottom: 2px solid #00a671;
 }
 .act-list {
   background-color: #fff;
@@ -117,7 +117,7 @@
 .act-list .act-state {
   text-align: right;
   font-size: 13px;
-  color: #ea0079;
+  color: #00a671;
 }
 .act-list .act-state.doing {
   color: #06be04;

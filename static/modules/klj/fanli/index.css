@@ -157,7 +157,7 @@ a:visited {
 }
 .btn,
 a.btn {
-  background-color: #ea0079;
+  background-color: #00a671;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 0;
@@ -183,7 +183,7 @@ a.btn-sm {
  */
 .btnl,
 a.btnl {
-  background-color: #ea0079;
+  background-color: #00a671;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 0;
@@ -226,13 +226,13 @@ a.btnl-wx:active {
 }
 .btnl-border,
 a.btnl-border {
-  border: 1px solid #ea0079;
+  border: 1px solid #00a671;
   background-color: #ffffff;
-  color: #ea0079;
+  color: #00a671;
 }
 .btnl-border:active,
 a.btnl-border:active {
-  background-color: #ea0079;
+  background-color: #00a671;
   color: #fff;
 }
 .btnl-disabled,
@@ -255,7 +255,7 @@ a.btnl-disabled {
   margin-left: -16px;
   width: 24px;
   height: 24px;
-  border: 2px solid #ea0079;
+  border: 2px solid #00a671;
   border-radius: 24px;
   -webkit-animation: gif 1s infinite linear;
   animation: gif 1s infinite linear;
@@ -323,8 +323,8 @@ body {
   padding: 0 5px;
 }
 .klj-nav li.active > a {
-  border-bottom: 2px solid #ea0079;
-  color: #ea0079;
+  border-bottom: 2px solid #00a671;
+  color: #00a671;
 }
 .welcome {
   color: #999;
@@ -339,7 +339,7 @@ body {
   padding: 30px 3.125% 32px;
 }
 .fanli-section .money {
-  color: #ea0079;
+  color: #00a671;
   font-size: 36px;
   line-height: 1;
   margin-bottom: 16px;
@@ -360,7 +360,7 @@ body {
   overflow: hidden;
 }
 .list-section .tab-nav {
-  border: 1px solid #ea0079;
+  border: 1px solid #00a671;
   -webkit-border-radius: 3px;
   -webki-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -391,7 +391,7 @@ body {
   display: block;
 }
 .list-section .tab-nav li.active {
-  background-color: #ea0079;
+  background-color: #00a671;
 }
 .list-section .tab-nav li.active > a {
   color: #fff;
@@ -456,7 +456,7 @@ body {
   font-size: 12px;
 }
 .content-item .state.complete {
-  color: #ea0079;
+  color: #00a671;
 }
 .content-item .state.doing {
   color: #999999;
@@ -606,7 +606,7 @@ body {
   font-size: 14px;
 }
 .gen-link-section .gen-link {
-  color: #ea0079;
+  color: #00a671;
   line-height: 40px;
 }
 .gen-link-section .copy-link {
