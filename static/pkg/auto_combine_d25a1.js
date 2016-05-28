@@ -1440,7 +1440,7 @@ __p+='\r\n\t\t<div class="btn-wrap">\r\n\t\t\t<button class="btnl">支付<span c
 ((__t=( pageNum ))==null?'':__t)+
 '" timer="'+
 ((__t=( item.leftTime ))==null?'':__t)+
-'"></span></button>\r\n\t\t</div>\r\n\t\t';
+'"></span></button>\r\n\t\t</div\r\n\t\t';
  } 
 __p+='\r\n\t</a>\r\n</li>\r\n';
  }) 
