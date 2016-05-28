@@ -3139,7 +3139,7 @@ with(obj||{}){
 __p+='';
  _.each(list, function(item){  
 __p+='\r\n<div class="goods">\r\n\t<a href="/Mall/Goods/detail?g='+
-((__t=( item.product_id ))==null?'':__t)+
+((__t=( item.goodsId ))==null?'':__t)+
 '">\r\n\t\t<div class="img-wrap" style="background-image: url('+
 ((__t=( item.imageUrl ))==null?'':__t)+
 ')"></div>\r\n\t\t<div class="goods-title">'+

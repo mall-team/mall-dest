@@ -902,7 +902,7 @@ a.btnl-disabled {
 .nav > li.active label,
 .nav > li:active label,
 .nav > li:focus label {
-  color: #ea0079;
+  color: #00a671;
 }
 .nav .icon {
   -webki-background-size: contain;

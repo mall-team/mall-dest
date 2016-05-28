@@ -1525,7 +1525,7 @@ function getList(back, isOpenList) {
 		type: 'get'
 	}, function(result) {
 		listData = result.data || [];
-		selected && selected(_getDefault());
+		// selected && selected(_getDefault());
 
 		if (isOpenList === undefined || isOpenList) {
 			if (listData.length == 0) {
@@ -2191,9 +2191,9 @@ function init() {
 		return Timer.addZero(minute) + ':' + Timer.addZero(sec);
 	}).start();
 
-	calculateMoney();
-	initLastMoney();
-	initLastTaobi();
+	// calculateMoney();
+	// initLastMoney();
+	// initLastTaobi();
 	addEvent();
 
 	if ($address.hasClass('no-address')) {

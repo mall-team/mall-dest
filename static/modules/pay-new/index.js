@@ -40,9 +40,9 @@ function init() {
 		return Timer.addZero(minute) + ':' + Timer.addZero(sec);
 	}).start();
 
-	calculateMoney();
-	initLastMoney();
-	initLastTaobi();
+	// calculateMoney();
+	// initLastMoney();
+	// initLastTaobi();
 	addEvent();
 
 	if ($address.hasClass('no-address')) {
