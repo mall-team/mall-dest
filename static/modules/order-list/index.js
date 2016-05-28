@@ -21,7 +21,20 @@ renderTimer($('[timer]'));
 
 
 var orderType = $('body').attr('order-type');
+var orderTypeDes = '';
 var ajaxUrl, itemLink;
+
+switch (orderType) {
+	case 'pay-wait':
+		orderTypeDes = '待支付';
+		break;
+	case 'sign-wait':
+		orderTypeDes = '待收货';
+		break;
+	case 'complete':
+		orderTypeDes = '已完成';
+		break;
+}
 
 ajaxUrl = $('#J-ajaxurl-list').val();
 itemLink = $('#J-detail-prefix').val();
@@ -45,31 +58,31 @@ __p+='';
 __p+='\r\n<li class="order-item">\r\n\t<a href="'+
 ((__t=( itemLink + item.orderId ))==null?'':__t)+
 '">\r\n\t\t<p class="top-info clearfix">\r\n\t\t\t<span class="date"><label>下单时间:</label><b>'+
-((__t=( item.createTime ))==null?'':__t)+
+((__t=( item.ctime ))==null?'':__t)+
 '</b></span>\r\n\t\t\t';
- if(item.showStateName == '已取消'){ 
+ if(item.orderState == '2'){ 
 __p+='\r\n\t\t\t<span class="state cancel right">'+
-((__t=( item.showStateName ))==null?'':__t)+
+((__t=( item.orderStateDesc ))==null?'':__t)+
 '</span>\r\n\t\t\t';
  }else{ 
 __p+='\r\n\t\t\t<span class="state right">'+
-((__t=( item.showStateName ))==null?'':__t)+
+((__t=( orderTypeDes ))==null?'':__t)+
 '</span>\r\n\t\t\t';
  } 
 __p+='\r\n\t\t</p>\r\n\t\t<div class="order-info dib-wrap">\r\n\t\t\t<div class="img-wrap dib" style="background-image: url('+
-((__t=( item.iShowImageUrl ))==null?'':__t)+
+((__t=( item.showImageUrl ))==null?'':__t)+
 ')"></div>\r\n\t\t\t<dl class="dib clearfix">\r\n\t\t\t\t<dt>订单编号</dt>\r\n\t\t\t\t<dd>'+
 ((__t=( item.orderId ))==null?'':__t)+
 '</dd>\r\n\t\t\t\t<dt>订单金额</dt>\r\n\t\t\t\t<dd><span class="price"><i>&yen;</i><b>'+
-((__t=( item.totalAmount ))==null?'':__t)+
+((__t=( item.orderAmount ))==null?'':__t)+
 '</b></span></dd>\r\n\t\t\t\t<dt>商品件数</dt>\r\n\t\t\t\t<dd>'+
-((__t=( item.productList.length ))==null?'':__t)+
+((__t=( item.goodsNumber ))==null?'':__t)+
 '</dd>\r\n\t\t\t</dl>\r\n\t\t\t<i class="icon-arrow"></i>\r\n\t\t</div>\r\n\t\t';
  if(orderType == 'pay-wait'){ 
 __p+='\r\n\t\t<div class="btn-wrap">\r\n\t\t\t<button class="btnl">支付<span class="J-timer-'+
 ((__t=( pageNum ))==null?'':__t)+
 '" timer="'+
-((__t=( item.iLeftTime ))==null?'':__t)+
+((__t=( item.leftTime ))==null?'':__t)+
 '"></span></button>\r\n\t\t</div>\r\n\t\t';
  } 
 __p+='\r\n\t</a>\r\n</li>\r\n';
