@@ -3953,7 +3953,9 @@ function initCart() {
 /**
  * 添加到购物车
  */
-function addCart() {
+function addCart(evt) {
+	evt.preventDefault();
+
 	var $cur = $(this);
 	var goodsId = $cur.attr('goods-id');
 
