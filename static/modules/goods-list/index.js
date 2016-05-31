@@ -8,6 +8,7 @@ var PageLoader = require('common/page-loader/index');
 var Bubble = require('common/bubble/bubble');
 var Timer = require('common/timer/timer');
 var FixTop = require('common/fix-top/index');
+var Swiper = require('common/swiper/index');
 
 require('common/gotop/index');
 require('search-panel/index');
@@ -85,6 +86,12 @@ function init() {
 	initCat();
 	addEvt();
 	initCart();
+	initImgLoader();
+
+	new Swiper({
+		container: 'banner',
+		pager: 'bannerPager'
+	});
 }
 
 /**
@@ -147,5 +154,45 @@ function addCart() {
 	}, function() {
 		initCart();
 	});
+}
+
+
+/**
+ * 初始化图片异步加载
+ * @return {[type]} [description]
+ */
+function initImgLoader() {
+	window.onload = function() {
+		var $bgDoms = $('[tjz-bgimg]');
+
+		$bgDoms.each(function(i, item) {
+			var $bgDom = $(item);
+			var url = $bgDom.attr('tjz-bgimg');
+
+			if (url) {
+				loadImg(url, item);
+			}
+
+		});
+
+
+		function loadImg(url, dom) {
+			var img = new Image();
+
+			img.src = url;
+			if (img.complete) {
+				rendDom();
+				return;
+			}
+			img.onload = function() {
+				rendDom();
+			}
+
+			function rendDom() {
+				$(dom).css('background-image', 'url(' + url + ')');
+			}
+
+		}
+	};
 } 
 });
