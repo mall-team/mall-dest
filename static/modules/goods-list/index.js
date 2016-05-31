@@ -88,10 +88,12 @@ function init() {
 	initCart();
 	initImgLoader();
 
-	new Swiper({
-		container: 'banner',
-		pager: 'bannerPager'
-	});
+	if ($('#banner')[0]) {
+		new Swiper({
+			container: 'banner',
+			pager: 'bannerPager'
+		});
+	}
 }
 
 /**
