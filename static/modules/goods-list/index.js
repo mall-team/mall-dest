@@ -32,7 +32,7 @@ var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments
 with(obj||{}){
 __p+='';
  _.each(list, function(item){  
-__p+='\r\n<div class="goods">\r\n\t<a href="/Mall/Goods/detail?goodsId='+
+__p+='\r\n<div class="goods">\r\n\t<a href="/mall/Goods/detail?goodsId='+
 ((__t=( item.goodsId ))==null?'':__t)+
 '">\r\n\t\t<div class="img-wrap" style="background-image: url('+
 ((__t=( item.imageUrl ))==null?'':__t)+
