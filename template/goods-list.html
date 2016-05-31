@@ -9,6 +9,10 @@
 <body>
 	<!--列表url-->
 	<input id="J-ajax-url" type="hidden" value="/Mall/Home/getListData?id=8" />
+	<!--初始化购物车url，返回number-->
+	<input id="J-ajaxurl-initCart" type="hidden" value="/Mall/Home/cartGoodsNumber" />
+	<!--添加到购物车-->
+	<input id="J-ajaxurl-addCart" type="hidden" value="/api/Cart/autoAdd" />
 	
 	<!--
 		@require "modules/common/common.less"
@@ -62,10 +66,11 @@
 	<section id="J-goods-list" class="goods-list">
 		<div class="goods">
 			<div class="img-wrap" style="background-image: url(/static/images/test/tm-1.png)"></div>
-			<div class="goods-title">clinique超值润肤水值润肤水值润肤水值润肤水<润肤水<润肤水</div>
+			<div class="goods-title">222clinique超值润肤水值润肤水值润肤水值润肤水<润肤水<润肤水</div>
 			<div class="clearfix">
 				<label class="price"><i>&yen;</i><b>128.55</b></label>
-				<label class="btn btn-sm right">7.8折</label>
+				<a class="btn-sm J-add-cart" goods-id="123"></a>
+				<!-- <label class="btn btn-sm right">7.8折</label> -->
 			</div>
 		</div>
 		<div class="goods">
@@ -73,6 +78,7 @@
 			<div class="goods-title">clinique超值润肤水值润肤水值润肤水值润肤水</div>
 			<div class="clearfix">
 				<label class="price"><i>&yen;</i><b>128.55</b></label>
+				<a class="btn-sm J-add-cart"></a>
 			</div>
 		</div>
 		<div class="goods">
@@ -80,7 +86,7 @@
 			<div class="goods-title">clinique超值润肤水值润肤水值润肤水值润肤水</div>
 			<div class="clearfix">
 				<label class="price"><i>&yen;</i><b>128.55</b></label>
-				<label class="btn btn-sm">7.8折</label>
+				<a class="btn-sm J-add-cart"></a>
 			</div>
 		</div>
 		<div class="goods">
@@ -88,7 +94,7 @@
 			<div class="goods-title">clinique超值润肤水值润肤水值润肤水值润肤水</div>
 			<div class="clearfix">
 				<label class="price"><i>&yen;</i><b>128.55</b></label>
-				<label class="btn btn-sm">7.8折</label>
+				<a class="btn-sm J-add-cart"></a>
 			</div>
 		</div>
 		<div class="goods">
@@ -96,7 +102,7 @@
 			<div class="goods-title">clinique超值润肤水值润肤水值润肤水值润肤水</div>
 			<div class="clearfix">
 				<label class="price"><i>&yen;</i><b>128.55</b></label>
-				<label class="btn btn-sm">7.8折</label>
+				<a class="btn-sm J-add-cart"></a>
 			</div>
 		</div>
 		<div class="goods">
@@ -104,7 +110,7 @@
 			<div class="goods-title">clinique超值润肤水值润肤水值润肤水值润肤水</div>
 			<div class="clearfix">
 				<label class="price"><i>&yen;</i><b>128.55</b></label>
-				<label class="btn btn-sm">7.8折</label>
+				<a class="btn-sm J-add-cart"></a>
 			</div>
 		</div>
 		<div class="goods">
@@ -112,11 +118,12 @@
 			<div class="goods-title">clinique超值润肤水值润肤水值润肤水值润肤水</div>
 			<div class="clearfix">
 				<label class="price"><i>&yen;</i><b>128.55</b></label>
-				<label class="btn btn-sm">7.8折</label>
+				<a class="btn-sm J-add-cart"></a>
 			</div>
 		</div>
 	</section>
 	<div id="J-loading" class="loading-icon-wrap"><i class="loading-icon"></i></div>
+	<a class="cart"><i>2</i></a>
 	<!-- <div class="copyright"><i></i></div> -->
 	<script type="text/javascript" charset="utf-8" src="/static/pkg/lib.js"></script>
 <script type="text/javascript" charset="utf-8" src="/static/pkg/auto_combine_54aeb.js"></script>

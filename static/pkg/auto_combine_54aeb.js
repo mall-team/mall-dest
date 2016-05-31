@@ -1553,7 +1553,7 @@ define('underscore', function(require, exports, module){ //     Underscore.js 1.
 var _tmpl = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
-__p+='<div id="copyright"><i></i></div>';
+__p+='<div id="copyright">大泽商城&nbsp;提供技术支持</div>';
 }
 return __p;
 };
@@ -3138,7 +3138,7 @@ var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments
 with(obj||{}){
 __p+='';
  _.each(list, function(item){  
-__p+='\r\n<div class="goods">\r\n\t<a href="/Mall/Goods/detail?g='+
+__p+='\r\n<div class="goods">\r\n\t<a href="/Mall/Goods/detail?goodsId='+
 ((__t=( item.goodsId ))==null?'':__t)+
 '">\r\n\t\t<div class="img-wrap" style="background-image: url('+
 ((__t=( item.imageUrl ))==null?'':__t)+
@@ -3146,13 +3146,9 @@ __p+='\r\n<div class="goods">\r\n\t<a href="/Mall/Goods/detail?g='+
 ((__t=( item.name ))==null?'':__t)+
 '</div>\r\n\t\t<div class="clearfix">\r\n\t\t\t<label class="price"><i>&yen;</i><b>'+
 ((__t=( item.salePrice ))==null?'':__t)+
-'</b></label>\r\n\t\t\t';
- if(item.discount){ 
-__p+='\r\n\t\t\t<label class="btn btn-sm right">'+
-((__t=( item.discount ))==null?'':__t)+
-'折</label>\r\n\t\t\t';
- } 
-__p+='\r\n\t\t</div>\r\n\t</a>\r\n</div>\r\n';
+'</b></label>\r\n\t\t\t<a class="btn-sm J-add-cart" goods-id="'+
+((__t=( item.goodsId ))==null?'':__t)+
+'"></a>\r\n\t\t</div>\r\n\t</a>\r\n</div>\r\n';
  }) 
 __p+='';
 }
@@ -3190,7 +3186,13 @@ new FixTop({
 });
 
 
-initCat();
+init();
+
+function init() {
+	initCat();
+	addEvt();
+	initCart();
+}
 
 /**
  * 初始化二级分类
@@ -3210,6 +3212,47 @@ function initCat() {
 	$catList.on('touchstart', function(e) {
 		e.stopPropagation();
 		sessionStorage.clear();
+	});
+}
+
+
+function addEvt() {
+	$('#J-goods-list').on('click', '.J-add-cart', addCart);
+}
+
+/**
+ * 初始化购物车
+ */
+function initCart() {
+	new Ajax().send({
+		url: $('#J-ajaxurl-initCart').val()
+	}, function(result) {
+		var num = +result.number;
+		var $cart = $('.cart');
+		var $cartNum = $('.cart > i');
+
+		if (num > 0) {
+			$cart.css('display', 'block');
+			$cartNum.text(num);
+		}
+	});
+}
+
+/**
+ * 添加到购物车
+ */
+function addCart() {
+	var $cur = $(this);
+	var goodsId = $cur.attr('goods-id');
+
+	new Ajax().send({
+		url: $('#J-ajaxurl-addCart').val(),
+		type: 'post',
+		data: {
+			goodsId: goodsId,
+		}
+	}, function() {
+		initCart();
 	});
 } 
 });

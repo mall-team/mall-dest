@@ -542,20 +542,9 @@ header .icon-order {
 }
 #copyright {
   text-align: center;
-  padding: 10px 0 5px;
+  padding: 10px 0 15px;
   margin-top: 20px;
-}
-#copyright i {
-  display: inline-block;
-  -webki-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url('/static/images/copyright2.png');
-  width: 131px;
-  height: 44px;
+  color: #ccc;
 }
 
 /*基本色调*/

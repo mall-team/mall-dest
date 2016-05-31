@@ -3,7 +3,7 @@ define('common/copyright/index', function(require, exports, module){ var $ = req
 var _tmpl = function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
-__p+='<div id="copyright"><i></i></div>';
+__p+='<div id="copyright">大泽商城&nbsp;提供技术支持</div>';
 }
 return __p;
 };
