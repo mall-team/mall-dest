@@ -119,7 +119,7 @@ function initCat() {
 
 
 function addEvt() {
-	$('#J-goods-list').on('click', '.J-add-cart', addCart);
+	$('.J-add-cart').on('click', addCart);
 }
 
 /**
