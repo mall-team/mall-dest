@@ -2297,7 +2297,7 @@ function PageLoader(options) {
 	this.loading = false;
 	this.hasAll = false;
 
-	this.scrollKey = options.scrollKey;
+	// this.scrollKey = options.scrollKey;
 	this.isScrollInit = true;
 
 	this._init();
