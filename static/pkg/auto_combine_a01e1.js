@@ -2090,7 +2090,7 @@ function show(options) {
 
 	new Ajax().send({
 		url: curOptions.ajaxUrl,
-		data: curOptions.ajaxParams
+		data: curOptions.ajaxParams || {}
 	}, function(result) {
 		var list = result.list;
 
@@ -2230,7 +2230,7 @@ function showTicket() {
 
 	TicketPop.show({
 		curId: $useTicket.val(),
-		ajaxUrl: : url,
+		ajaxUrl: url,
 		ajaxParams: ajaxParams,
 		orderMoney: totalVal,
 		selected: function(ticketItem, total) {

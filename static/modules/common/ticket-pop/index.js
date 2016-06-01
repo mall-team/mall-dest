@@ -11,7 +11,7 @@ function show(options) {
 
 	new Ajax().send({
 		url: curOptions.ajaxUrl,
-		data: curOptions.ajaxParams
+		data: curOptions.ajaxParams || {}
 	}, function(result) {
 		var list = result.list;
 
