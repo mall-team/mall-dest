@@ -1459,15 +1459,15 @@ with(obj||{}){
 __p+='';
  $.each(list, function(i, item){ 
 __p+='\r\n<li>\r\n\t<span class="title">'+
-((__t=( item.consum_type ))==null?'':__t)+
+((__t=( item.desc ))==null?'':__t)+
 '</span>\r\n\t<span class="price ';
- if(item.payment_type==1){ 
+ if(item.bill_type==1){ 
 __p+='income';
  } 
 __p+='">'+
 ((__t=( item.amount ))==null?'':__t)+
 '</span>\r\n\t<span class="date">'+
-((__t=( item.create_time ))==null?'':__t)+
+((__t=( item.ctime ))==null?'':__t)+
 '</span>\r\n</li>\r\n';
  }) 
 __p+='';
@@ -1503,15 +1503,15 @@ with(obj||{}){
 __p+='';
  $.each(list, function(i, item){ 
 __p+='\r\n<li>\r\n\t<span class="title">'+
-((__t=( item.consum_type ))==null?'':__t)+
+((__t=( item.desc ))==null?'':__t)+
 '</span>\r\n\t<span class="price ';
- if(item.payment_type==1){ 
+ if(item.bill_type==1){ 
 __p+='income';
  } 
 __p+='">'+
 ((__t=( item.amount ))==null?'':__t)+
 '</span>\r\n\t<span class="date">'+
-((__t=( item.create_time ))==null?'':__t)+
+((__t=( item.ctime ))==null?'':__t)+
 '</span>\r\n</li>\r\n';
  }) 
 __p+='';
@@ -1546,15 +1546,15 @@ with(obj||{}){
 __p+='';
  $.each(list, function(i, item){ 
 __p+='\r\n<li>\r\n\t<span class="title">'+
-((__t=( item.consum_type ))==null?'':__t)+
+((__t=( item.desc ))==null?'':__t)+
 '</span>\r\n\t<span class="price ';
- if(item.payment_type==1){ 
+ if(item.bill_type==1){ 
 __p+='income';
  } 
 __p+='">'+
 ((__t=( item.amount ))==null?'':__t)+
 '</span>\r\n\t<span class="date">'+
-((__t=( item.create_time ))==null?'':__t)+
+((__t=( item.ctime ))==null?'':__t)+
 '</span>\r\n</li>\r\n';
  }) 
 __p+='';
