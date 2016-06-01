@@ -2226,7 +2226,7 @@ function addEvent() {
 function showTicket() {
 	var $ajaxNode = $('#J-ajaxurl-ticketList')
 	var url = $ajaxNode.val();
-	var ajaxParams = JSON.parse($ajaxNode.atrr('ajaxParams'));
+	var ajaxParams = JSON.parse($ajaxNode.attr('ajaxParams'));
 
 	TicketPop.show({
 		curId: $useTicket.val(),
