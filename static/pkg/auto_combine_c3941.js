@@ -2331,6 +2331,9 @@ function init() {
 	initImgLoader();
 	initMiao();
 	initNy();
+
+	$('.J-add-cart').on('click', addCart);
+	window.addCart = addCart;
 }
 
 function lazyLoadImg(){
@@ -2643,6 +2646,27 @@ function initCart() {
 			$cart.css('display', 'block');
 			$cartNum.text(num);
 		}
+	});
+}
+
+/**
+ * 添加到购物车
+ */
+function addCart(evt) {
+	evt.preventDefault();
+	evt.stopPropagation();
+
+	var $cur = $(this);
+	var goodsId = $cur.attr('goods-id');
+
+	new Ajax().send({
+		url: $('#J-ajaxurl-addCart').val(),
+		type: 'post',
+		data: {
+			goodsId: goodsId,
+		}
+	}, function() {
+		initCart();
 	});
 }
 

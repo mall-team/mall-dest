@@ -10,6 +10,8 @@
 <body>
 	<!--初始化购物车url，返回number-->
 	<input type="hidden" id="J-ajaxurl-initCart" value="/Mall/Home/cartGoodsNumber" />
+<!--添加到购物车-->
+	<input id="J-ajaxurl-addCart" type="hidden" value="/api/Cart/autoAdd" />
 
 	<div class="wrap">
 		<!-- <div class="atten-panel clearfix">
@@ -270,7 +272,7 @@
 							<div class="item-title">clinique超值润肤水1clinique超值润肤水1</div>
 							<div class="item-price">
 								<span class="price">&yen; 253.00</span>
-								<label class="btn btn-sm">7.8折</label>
+								<a class="btn-sm J-add-cart" goods-id="123"></a>
 							</div>
 						</div>
 					</a>
