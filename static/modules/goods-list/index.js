@@ -40,9 +40,9 @@ __p+='\r\n<div class="goods">\r\n\t<a href="/mall/Goods/detail?goodsId='+
 ((__t=( item.name ))==null?'':__t)+
 '</div>\r\n\t\t<div class="clearfix">\r\n\t\t\t<label class="price"><i>&yen;</i><b>'+
 ((__t=( item.salePrice ))==null?'':__t)+
-'</b></label>\r\n\t\t\t<a class="btn-sm J-add-cart" goods-id="'+
+'</b></label>\r\n\t\t\t<label onclick="addCart(event);" class="btn-sm J-add-cart" goods-id="'+
 ((__t=( item.goodsId ))==null?'':__t)+
-'"></a>\r\n\t\t</div>\r\n\t</a>\r\n</div>\r\n';
+'"></label>\r\n\t\t</div>\r\n\t</a>\r\n</div>\r\n';
  }) 
 __p+='';
 }
@@ -120,6 +120,7 @@ function initCat() {
 
 function addEvt() {
 	$('.J-add-cart').on('click', addCart);
+	window.addCart = addCart;
 }
 
 /**
@@ -145,6 +146,7 @@ function initCart() {
  */
 function addCart(evt) {
 	evt.preventDefault();
+	evt.stopPropagation();
 
 	var $cur = $(this);
 	var goodsId = $cur.attr('goods-id');
