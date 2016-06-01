@@ -10,7 +10,7 @@ function show(options) {
 	curOptions = options || {};
 
 	new Ajax().send({
-		url: '/User/Center/getOrderCouponList',
+		url: curOptions.ajaxUrl,
 		data: curOptions.ajaxParams
 	}, function(result) {
 		var list = result.list;

@@ -71,33 +71,15 @@ function addEvent() {
 
 }
 
-/**
- * 显示优惠券列表
- * @return {[type]} [description]
- */
+
 function showTicket() {
-	var $cur = $(this);
-	var cartId = []; //购物车
-	var ajaxParams = {};
-
-	if (!$cur.hasClass('has-ticket')) {
-		return;
-	}
-
-	$('input[name="cartId[]"]').each(function(i, input) {
-		cartId.push($(input).val());
-	});
-
-	if (cartId.length > 0) { //购物车结算
-		ajaxParams.cartId = cartId.join(',');
-	} else { //单品结算
-		ajaxParams.productId = $('input[name="productId"]').val();
-		ajaxParams.num = $('input[name="productNumber"]').val();
-		ajaxParams.skuValuesText = $('input[name="skuValuesText"]').val();
-	}
+	var $ajaxNode = $('#J-ajaxurl-ticketList')
+	var url = $ajaxNode.val();
+	var ajaxParams = JSON.parse($ajaxNode.atrr('ajaxParams'));
 
 	TicketPop.show({
 		curId: $useTicket.val(),
+		ajaxUrl: : url,
 		ajaxParams: ajaxParams,
 		orderMoney: totalVal,
 		selected: function(ticketItem, total) {
@@ -118,7 +100,57 @@ function showTicket() {
 			calculateMoney();
 		}
 	});
+
 }
+
+/**
+ * 显示优惠券列表
+ * @return {[type]} [description]
+ */
+// function showTicket() {
+// 	var $cur = $(this);
+// 	var cartId = []; //购物车
+// 	var ajaxParams = {};
+
+// 	if (!$cur.hasClass('has-ticket')) {
+// 		return;
+// 	}
+
+// 	$('input[name="cartId[]"]').each(function(i, input) {
+// 		cartId.push($(input).val());
+// 	});
+
+// 	if (cartId.length > 0) { //购物车结算
+// 		ajaxParams.cartId = cartId.join(',');
+// 	} else { //单品结算
+// 		ajaxParams.productId = $('input[name="productId"]').val();
+// 		ajaxParams.num = $('input[name="productNumber"]').val();
+// 		ajaxParams.skuValuesText = $('input[name="skuValuesText"]').val();
+// 	}
+
+// 	TicketPop.show({
+// 		curId: $useTicket.val(),
+// 		ajaxParams: ajaxParams,
+// 		orderMoney: totalVal,
+// 		selected: function(ticketItem, total) {
+// 			if (ticketItem == -1) {
+// 				$cur.find('.ticket-num b').text(total);
+// 				$cur.addClass('nouse-ticket');
+
+// 				$useTicket.val('');
+// 				$minusTicket.css('display', 'none');
+// 			} else {
+// 				$('#J-ticket-price').text(ticketItem.coupon_money);
+// 				$cur.removeClass('nouse-ticket');
+
+// 				$useTicket.val(ticketItem.coupon_code);
+// 				$minusTicket.find('.price b').text(ticketItem.coupon_money);
+// 				$minusTicket.css('display', 'inline');
+// 			}
+// 			calculateMoney();
+// 		}
+// 	});
+// }
 
 function showAddr() {
 	Address.show({
