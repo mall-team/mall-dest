@@ -3692,6 +3692,10 @@ CartAni.prototype = {
 		var cartWid = $cart.width();
 		var cartHei = $cart.height();
 
+		$imgCloneWrap.on('touchstart', function(evt) { //避免穿透点击
+			evt.preventDefault();
+			evt.stopPropagation();
+		});
 		$imgCloneWrap.offset({
 			top: $img.offset().top,
 			left: $img.offset().left
