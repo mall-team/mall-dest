@@ -149,7 +149,7 @@ function addCart(evt) {
 	evt.preventDefault();
 	evt.stopPropagation();
 
-	var $cur = $(this);
+	var $cur = $(evt.target);
 	var goodsId = $cur.attr('goods-id');
 
 	new Ajax().send({

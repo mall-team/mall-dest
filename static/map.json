@@ -1186,6 +1186,7 @@
                 "common/ajax/index",
                 "common/util/index",
                 "common/alert/alert",
+                "common/cart-ani/index",
                 "search-panel/index",
                 "common/gotop/index",
                 "modules/index-new/index.less"
@@ -3190,7 +3191,7 @@
             ]
         },
         "auto_js_60": {
-            "uri": "/static/pkg/auto_combine_c3941.js",
+            "uri": "/static/pkg/auto_combine_44fd2.js",
             "type": "js",
             "has": [
                 "common/copyright/index",
@@ -3206,13 +3207,14 @@
                 "common/confirm-service/index",
                 "common/login-pop/index",
                 "common/ajax/index",
+                "common/cart-ani/index",
                 "search-panel/index",
                 "common/gotop/index",
                 "index-new/index"
             ]
         },
         "auto_css_61": {
-            "uri": "/static/pkg/auto_combine_a3939.css",
+            "uri": "/static/pkg/auto_combine_073e3.css",
             "type": "css",
             "has": [
                 "modules/common/copyright/index.less",
@@ -3223,6 +3225,7 @@
                 "modules/common/alert/alert.less",
                 "modules/common/confirm-service/index.less",
                 "modules/common/login-pop/index.less",
+                "modules/common/cart-ani/index.less",
                 "modules/search-panel/index.less",
                 "modules/common/gotop/index.less",
                 "modules/index-new/index.less"

@@ -8,6 +8,7 @@ var Ajax = require('common/ajax/index');
 var Util = require('common/util/index');
 var Alert = require('common/alert/alert');
 // var KljAlert = require('klj/klj-alert/index');
+var CartAni = require('common/cart-ani/index');
 
 require('search-panel/index');
 require('common/gotop/index');
@@ -353,7 +354,7 @@ function addCart(evt) {
 	evt.preventDefault();
 	evt.stopPropagation();
 
-	var $cur = $(this);
+	var $cur = $(evt.target);
 	var goodsId = $cur.attr('goods-id');
 
 	new Ajax().send({
@@ -363,7 +364,9 @@ function addCart(evt) {
 			goodsId: goodsId,
 		}
 	}, function() {
-		initCart();
+		new CartAni($cur.parent().parent().find('.img-wrap'), $('.cart')).fly(function() {
+			initCart();
+		});
 	});
 }
 
