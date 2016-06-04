@@ -2614,7 +2614,7 @@ return __p;
 };
 
 	new Ajax().send({
-		url: '/Mall/Activity/previewFlashActivity',
+		url: $('#J-ajaxurl-miaoList').val(),
 		data: {
 			hour: $cur.text().split(':')[0]
 		}

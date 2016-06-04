@@ -2229,6 +2229,9 @@ function showTicket() {
 	var url = $ajaxNode.val();
 	var ajaxParams = JSON.parse($ajaxNode.attr('ajaxParams'));
 
+	if ($cur.hasClass('disabled')) {
+		return false;
+	}
 	TicketPop.show({
 		curId: $useTicket.val(),
 		ajaxUrl: url,
