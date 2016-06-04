@@ -2568,45 +2568,29 @@ var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments
 with(obj||{}){
 __p+='';
  $.each(list, function(i, item){ 
-__p+='\r\n<li act-id="'+
-((__t=( item.id ))==null?'':__t)+
-'">\r\n\t<a href="/Mall/Goods/detail?g='+
-((__t=( item['goodsInfo']['product_id'] ))==null?'':__t)+
-'&spe=3&act_id='+
-((__t=( item.id ))==null?'':__t)+
-'">\r\n\t\t<div class="img-wrap" style="background-image:url('+
+__p+='\r\n<div class="temai-item dib">\r\n\t<a href="/mall/Goods/detail?goodsId='+
+((__t=( item['goods_id'] ))==null?'':__t)+
+'">\r\n\t\t<div class="img-wrap" style="background-image: url('+
 ((__t=( item.image_url ))==null?'':__t)+
 ')">\r\n\t\t\t';
- if(+item['goodsInfo']['product_number'] <= +item['goodsInfo']['sold_number']){ 
+ if(item.soldout == 1){ 
 __p+='\r\n\t\t\t<div class="empty"></div>\r\n\t\t\t';
- } 
-__p+='\r\n\t\t\t';
- if(!activityAlreadyStart && item.remainTime){ 
+ }else if(item.leftTime > 0){ 
 __p+='\r\n\t\t\t<div class="ready-tip">\r\n\t\t\t\t<p>距离开抢</p>\r\n\t\t\t\t<p class="J-miao-timer" timer="'+
-((__t=( item.remainTime ))==null?'':__t)+
-'"></p>\r\n\t\t\t\t';
- if(item.subscribe == 1){ 
-__p+='\r\n\t\t\t\t<button class="ready-btn active"><i class="icon-ling"></i><label>已订阅</label></button>\r\n\t\t\t\t';
- }else{ 
-__p+='\r\n\t\t\t\t<button class="ready-btn"><i class="icon-ling"></i><label>开抢提醒</label></button>\r\n\t\t\t\t';
+((__t=( item.leftTime ))==null?'':__t)+
+'"></p>\r\n\t\t\t</div>\r\n\t\t\t';
  } 
-__p+='\r\n\t\t\t</div>\r\n\t\t\t';
+__p+='\r\n\t\t</div>\r\n\t\t<div class="item-info">\r\n\t\t\t<div class="item-title">'+
+((__t=( item.name ))==null?'':__t)+
+'</div>\r\n\t\t\t<div class="item-price">\r\n\t\t\t\t<span class="price">&yen; '+
+((__t=( item.sale_price ))==null?'':__t)+
+'</span>\r\n\t\t\t\t<a class="btn-sm ';
+ if(item.start == 1){ 
+__p+='J-add-cart ';
  } 
-__p+='\r\n\t\t</div>\r\n\t\t<div class="banner-info clearfix">\r\n\t\t\t';
- if(item['goodsInfo']['discount']){ 
-__p+='\r\n\t\t\t<span class="qi">'+
-((__t=( item['goodsInfo']['discount'] ))==null?'':__t)+
-'折</span>\r\n\t\t\t';
- } 
-__p+='\r\n\t\t\t<span class="banner-title">'+
-((__t=( item.title ))==null?'':__t)+
-'</span>\r\n\t\t\t';
- if(activityAlreadyStart){ 
-__p+='\r\n\t\t\t<span class="banner-timer right" timer="21100">剩'+
-((__t=( item.remainTime ))==null?'':__t)+
-'</span>\r\n\t\t\t';
- } 
-__p+='\r\n\t\t</div>\r\n\t</a>\r\n</li>\r\n';
+__p+='" goods-id="'+
+((__t=( item.goods_id ))==null?'':__t)+
+'"></a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</a>\r\n</div>\r\n';
  }) 
 __p+='';
 }

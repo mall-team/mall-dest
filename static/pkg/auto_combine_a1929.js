@@ -1623,7 +1623,7 @@ function upadateNum(v, el) {
 		}
 	}, function() {
 		calculate();
-		$li.find('.price b').text(price * 100 * v / 100);
+		$li.find('.price b').text((price * 100 * v / 100).toFixed(2));
 	});
 }
 
@@ -1640,6 +1640,7 @@ function del($ths) {
 				} else {
 					$li.remove();
 					calculate();
+					Nav.initCart();
 				}
 			});
 		}

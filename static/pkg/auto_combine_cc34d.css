@@ -210,7 +210,8 @@ a.btnl-default {
 }
 .btnl-default:active,
 a.btnl-default:active {
-  opacity: .6;
+  background-color: #e1e1e1;
+  color: #50555a;
 }
 .btnl-wx,
 a.btnl-wx {
@@ -1413,7 +1414,8 @@ a.btnl-default {
 }
 .btnl-default:active,
 a.btnl-default:active {
-  opacity: .6;
+  background-color: #e1e1e1;
+  color: #50555a;
 }
 .btnl-wx,
 a.btnl-wx {
