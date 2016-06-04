@@ -1,0 +1,69 @@
+/*基本色调*/
+/*Background Color*/
+/*Border Color*/
+/*Text Color*/
+/*Text size*/
+/*label color*/
+/*button color*/
+/*三角形*/
+/*边框三角形*/
+/*圆角*/
+/*圆角*/
+/*线性渐变*/
+/*不折行*/
+/*分栏*/
+/*渐变*/
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.rotate {
+  -webkit-animation-name: route;
+  animation-name: route;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes route {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes route {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
