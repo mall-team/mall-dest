@@ -1294,6 +1294,19 @@ ul.three .item {
   background-color: #fff;
   padding: 0 0.9375% 4px;
 }
+.temai-list .ready-tip {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 60%;
+  margin-left: -30%;
+  margin-top: -30px;
+}
+.temai-list .empty {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
 .temai-item {
   border: 1px solid #eeeeee;
   margin: 0 0.95541401% 6px;
@@ -1302,6 +1315,7 @@ ul.three .item {
 .temai-item .img-wrap {
   width: 100%;
   margin-bottom: 10px;
+  position: relative;
 }
 .temai-item .img-wrap:before {
   content: '';
@@ -1329,14 +1343,13 @@ ul.three .item {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('/static/images/goods-list/icon-add-cart.png');
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   color: #fff;
   line-height: 19px;
   font-size: 12px;
   padding-right: 0;
   padding-left: 10px;
-  margin-top: -2.5px;
 }
 .temai-item .item-title {
   font-size: 12px;
@@ -1347,8 +1360,11 @@ ul.three .item {
   margin-bottom: 9px;
 }
 .temai-item .item-price .price {
+  display: inline-block;
   color: #cc0000;
   font-size: 15px;
+  height: 30px;
+  line-height: 30px;
 }
 .temai-item .item-price .btn {
   float: right;

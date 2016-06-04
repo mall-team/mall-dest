@@ -323,7 +323,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   padding: 0 3.125%;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   min-height: 30px;
 }
 .goods .clearfix {
@@ -334,6 +334,9 @@ body {
 .goods .clearfix .price {
   color: #cc0000;
   font-size: 14px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
 }
 .goods .clearfix .btn-sm {
   float: right;
@@ -344,14 +347,13 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('/static/images/goods-list/icon-add-cart.png');
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   color: #fff;
   line-height: 19px;
   font-size: 12px;
   padding-right: 0;
   padding-left: 10px;
-  margin-top: -2.5px;
 }
 .goods .price {
   color: #00a671;
