@@ -2206,7 +2206,7 @@ CartAni.prototype = {
 			'width': '20px',
 			'height': '20px'
 		}, 800, 'ease-in-out', function() {
-			$imgClone.remove();
+			$imgCloneWrap.remove();
 			back && back();
 		});
 
