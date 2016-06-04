@@ -417,6 +417,29 @@ a.btnl-disabled {
 .nav .mine:focus .icon {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVDRjhGM0M1MjIyQzExRTZBRTEzQkIwNTg2Qzg3Njg4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVDRjhGM0M2MjIyQzExRTZBRTEzQkIwNTg2Qzg3Njg4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUNGOEYzQzMyMjJDMTFFNkFFMTNCQjA1ODZDODc2ODgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RUNGOEYzQzQyMjJDMTFFNkFFMTNCQjA1ODZDODc2ODgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz76pAD8AAACU0lEQVR42tyYP0jCQRTHL0kQmooCcWuqEIpcgiAJGoOGaLGiLXBpSGqKpiiC/iwO0uAShUs0BA0NRtAQTrpVg5SLS5JEBEKDfS9eYPWjvPvd+3X04Msb9N19eL93d++upV6vCzfWkklI1wtNQaNQH9RBPz9C19AFdATdfI2vx3bV5nMDDFgJug2NNxlyCi01gqsC+1zALsLlFWAF/VfGLOrO69OE3YGTqQlohAcodscTYMpsQri3hE6mlWoYsENwl5BfmLFXaAR1nOPKcNogrKCx0iwlgexOw4WFeQvT2MYzHBd8Fjdaw8hAJ9yD4LUu1HLFVIb7Bb/1myyJoAfAQY5d4s/t3wI/ecDyZBK44gFwxSRw0QPgojFg2h/LjLDlZvZg1UV3xgh8xrFL7DEC7xkHphYwywCb5WwvNxiAlcZUAkYmzg1nOUtjsp5081DVAGyVxuI9mpGRO3qDeHEB+0Jj3HnSS9BnHNPMdJViz3Xm1m5+aGUPKx4oZYrJ6c7rtlu7V7yJPFCMtrVqPqTIx5BJaBkaUAiV/72CtqBjqMb2LkGQsvZmoAmozeXXkQvvBDqk7a1mBBigIbgFaA4KcTU/0D6UBHhZCxig3XCr0Kzhx5OfTL4EHUBrtH3+Dkyffp2y6hWoE3gSWvlaKp+AATsIl4F6LLnC3UIxQOe/AROs7BPaLbt3ysU58gHduA+nLIQVtBulnA6OiMW3+4gTsN9iYP+/f0ixErhkMWfJCThjMXDGCVheBgsWwhYaL6q+hob8GS4KbVpSHiViiRLbu70JMABocbxUvwZyqAAAAABJRU5ErkJggg==);
 }
+.nav .cart {
+  position: relative;
+}
+.nav .cart .cart-num {
+  display: none;
+  background-color: #f33125;
+  -webkit-border-radius: 50%;
+  -webki-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  font-size: normal;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  position: absolute;
+  top: 2%;
+  right: 24%;
+  z-index: 2;
+}
 body {
   padding-bottom: 50px;
 }

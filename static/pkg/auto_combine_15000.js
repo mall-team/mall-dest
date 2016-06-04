@@ -3689,6 +3689,9 @@ CartAni.prototype = {
 		var $imgCloneWrap = $(document.createElement('div'));
 		var $imgClone = $img.clone();
 
+		var cartWid = $cart.width();
+		var cartHei = $cart.height();
+
 		$imgCloneWrap.offset({
 			top: $img.offset().top,
 			left: $img.offset().left
@@ -3705,8 +3708,8 @@ CartAni.prototype = {
 		})).appendTo($('body'));
 
 		$imgCloneWrap.animate({
-			'top': $cart.offset().top + 10,
-			'left': $cart.offset().left + 10,
+			'top': $cart.offset().top + (cartHei - 10) / 2,
+			'left': $cart.offset().left + (cartWid - 10) / 2,
 			'width': '20px',
 			'height': '20px'
 		}, 800, 'ease-in-out', function() {
@@ -3866,6 +3869,8 @@ var Timer = require('common/timer/timer');
 var FixTop = require('common/fix-top/index');
 var Swiper = require('common/swiper/index');
 var CartAni = require('common/cart-ani/index');
+
+console.log('-----new');
 
 require('common/gotop/index');
 require('search-panel/index');
