@@ -40,8 +40,8 @@ function init() {
 		return Timer.addZero(minute) + ':' + Timer.addZero(sec);
 	}).start();
 
-	// calculateMoney();
-	// initLastMoney();
+	calculateMoney();
+	initLastMoney();
 	// initLastTaobi();
 	addEvent();
 
