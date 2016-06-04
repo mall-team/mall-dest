@@ -90,11 +90,11 @@ function showTicket() {
 				$useTicket.val('');
 				$minusTicket.css('display', 'none');
 			} else {
-				$('#J-ticket-price').text(ticketItem.coupon_money);
+				$('#J-ticket-price').text(ticketItem.coupon_amount);
 				$cur.removeClass('nouse-ticket');
 
-				$useTicket.val(ticketItem.coupon_code);
-				$minusTicket.find('.price b').text(ticketItem.coupon_money);
+				$useTicket.val(ticketItem.id);
+				$minusTicket.find('.price b').text(ticketItem.coupon_amount);
 				$minusTicket.css('display', 'inline');
 			}
 			calculateMoney();
