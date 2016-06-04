@@ -148,6 +148,7 @@
                 "common/bubble/bubble",
                 "common/confirm/index",
                 "common/timer/timer",
+                "common/nav/index",
                 "modules/cart/index.less"
             ],
             "id": "cart/index"
@@ -625,6 +626,14 @@
         "common/mockjs/index": {
             "uri": "/static/modules/common/mockjs/index.js",
             "type": "js"
+        },
+        "common/nav/index": {
+            "uri": "/static/modules/common/nav/index.js",
+            "type": "js",
+            "deps": [
+                "common/ajax/index"
+            ],
+            "id": "common/nav/index"
         },
         "modules/common/nav/nav.less": {
             "uri": "/static/modules/common/nav/nav.css",
@@ -1187,6 +1196,7 @@
                 "common/util/index",
                 "common/alert/alert",
                 "common/cart-ani/index",
+                "common/nav/index",
                 "search-panel/index",
                 "common/gotop/index",
                 "modules/index-new/index.less"
@@ -1634,6 +1644,7 @@
                 "zepto",
                 "common/ajax/index",
                 "common/pop/index",
+                "common/nav/index",
                 "modules/person/index.less"
             ],
             "id": "person/index"
@@ -2424,7 +2435,7 @@
             ]
         },
         "auto_js_8": {
-            "uri": "/static/pkg/auto_combine_20936.js",
+            "uri": "/static/pkg/auto_combine_a1929.js",
             "type": "js",
             "has": [
                 "common/copyright/index",
@@ -2439,6 +2450,7 @@
                 "common/ajax/index",
                 "common/confirm/index",
                 "common/timer/timer",
+                "common/nav/index",
                 "cart/index"
             ]
         },
@@ -3191,7 +3203,7 @@
             ]
         },
         "auto_js_60": {
-            "uri": "/static/pkg/auto_combine_44fd2.js",
+            "uri": "/static/pkg/auto_combine_d5f31.js",
             "type": "js",
             "has": [
                 "common/copyright/index",
@@ -3208,6 +3220,7 @@
                 "common/login-pop/index",
                 "common/ajax/index",
                 "common/cart-ani/index",
+                "common/nav/index",
                 "search-panel/index",
                 "common/gotop/index",
                 "index-new/index"
@@ -3873,7 +3886,7 @@
             ]
         },
         "auto_js_106": {
-            "uri": "/static/pkg/auto_combine_28246.js",
+            "uri": "/static/pkg/auto_combine_e7331.js",
             "type": "js",
             "has": [
                 "common/copyright/index",
@@ -3885,6 +3898,7 @@
                 "common/confirm-service/index",
                 "common/login-pop/index",
                 "common/ajax/index",
+                "common/nav/index",
                 "person/index"
             ]
         },

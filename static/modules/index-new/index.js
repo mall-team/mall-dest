@@ -9,6 +9,7 @@ var Util = require('common/util/index');
 var Alert = require('common/alert/alert');
 // var KljAlert = require('klj/klj-alert/index');
 var CartAni = require('common/cart-ani/index');
+var Nav = require('common/nav/index');
 
 require('search-panel/index');
 require('common/gotop/index');
@@ -24,11 +25,11 @@ function init() {
 	});
 	// isKlj();
 	initTimer();
-	initCart();
 	lazyLoadImg();
 	initImgLoader();
 	initMiao();
 	initNy();
+	Nav.initCart();
 
 	$('.J-add-cart').on('click', addCart);
 	window.addCart = addCart;
@@ -330,23 +331,6 @@ function initTimer() {
 }
 
 /**
- * 初始化购物车
- */
-function initCart() {
-	new Ajax().send({
-		url: $('#J-ajaxurl-initCart').val()
-	}, function(result) {
-		var num = +result.number;
-		// var $cart = $('.cart');
-		var $cartNum = $('.cart > .cart-num');
-
-		if (num > 0) {
-			$cartNum.text(num).css('display', 'block');
-		}
-	});
-}
-
-/**
  * 添加到购物车
  */
 function addCart(evt) {
@@ -364,7 +348,7 @@ function addCart(evt) {
 		}
 	}, function() {
 		new CartAni($cur.parent().parent().parent().find('.img-wrap'), $('.gift')).fly(function() {
-			initCart();
+			Nav.initCart();
 		});
 	});
 }
