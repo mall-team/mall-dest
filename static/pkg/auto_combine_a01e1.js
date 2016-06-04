@@ -2510,7 +2510,7 @@ function calculateMoney() {
 
 	//淘币
 	var $minusTaobi = $('#J-minus-taobi');
-	var taobiMoney = +$('#J-taobi-last-val').val();
+	var taobiMoney = +$('#J-taobi-last-val').val() || 0;
 
 
 	if (isUseTicket) {
