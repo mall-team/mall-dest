@@ -3721,7 +3721,7 @@ CartAni.prototype = {
 			back && back();
 		});
 
-		$imgClone.addClass('animated infinite rotate');
+		// $imgClone.addClass('animated infinite rotate');
 
 	}
 };

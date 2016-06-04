@@ -282,13 +282,11 @@ a.btnl {
 }
 .btnl:active,
 a.btnl:active {
-  color: #ccc;
-  background-color: #bb0061;
+  opacity: .6;
 }
 .btnl.disabled,
 .btnl.disabled:active {
-  background-color: #c8c8c8;
-  color: #fff;
+  opacity: .6;
 }
 .btnl-default,
 a.btnl-default {
@@ -298,8 +296,7 @@ a.btnl-default {
 }
 .btnl-default:active,
 a.btnl-default:active {
-  background-color: #e1e1e1;
-  color: #50555a;
+  opacity: .6;
 }
 .btnl-wx,
 a.btnl-wx {
@@ -307,8 +304,7 @@ a.btnl-wx {
 }
 .btnl-wx:active,
 a.btnl-wx:active {
-  background-color: #009200;
-  color: #ccc;
+  opacity: .6;
 }
 .btnl-border,
 a.btnl-border {
@@ -318,8 +314,7 @@ a.btnl-border {
 }
 .btnl-border:active,
 a.btnl-border:active {
-  background-color: #00a671;
-  color: #fff;
+  opacity: .6;
 }
 .btnl-disabled,
 a.btnl-disabled {
