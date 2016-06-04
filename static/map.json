@@ -392,6 +392,20 @@
             "type": "css",
             "id": "modules/common/bullet/index.less"
         },
+        "common/cart-ani/index": {
+            "uri": "/static/modules/common/cart-ani/index.js",
+            "type": "js",
+            "deps": [
+                "zepto",
+                "modules/common/cart-ani/index.less"
+            ],
+            "id": "common/cart-ani/index"
+        },
+        "modules/common/cart-ani/index.less": {
+            "uri": "/static/modules/common/cart-ani/index.css",
+            "type": "css",
+            "id": "modules/common/cart-ani/index.less"
+        },
         "common/comment-section/index": {
             "uri": "/static/modules/common/comment-section/index.js",
             "type": "js",
@@ -720,6 +734,10 @@
         },
         "modules/common/tuan-steps/index.less": {
             "uri": "/static/modules/common/tuan-steps/index.css",
+            "type": "css"
+        },
+        "modules/common/ui/animate.css": {
+            "uri": "/static/modules/common/ui/animate.css",
             "type": "css"
         },
         "modules/common/ui/func.less": {
@@ -1118,6 +1136,7 @@
                 "common/timer/timer",
                 "common/fix-top/index",
                 "common/swiper/index",
+                "common/cart-ani/index",
                 "common/gotop/index",
                 "search-panel/index",
                 "modules/goods-list/index.less"
@@ -3080,7 +3099,7 @@
             ]
         },
         "auto_js_56": {
-            "uri": "/static/pkg/auto_combine_00ce4.js",
+            "uri": "/static/pkg/auto_combine_15000.js",
             "type": "js",
             "has": [
                 "underscore",
@@ -3098,13 +3117,14 @@
                 "common/fix-top/index",
                 "common/swipe/swipe",
                 "common/swiper/index",
+                "common/cart-ani/index",
                 "common/gotop/index",
                 "search-panel/index",
                 "goods-list/index"
             ]
         },
         "auto_css_57": {
-            "uri": "/static/pkg/auto_combine_3de80.css",
+            "uri": "/static/pkg/auto_combine_5bbfd.css",
             "type": "css",
             "has": [
                 "modules/common/common.less",
@@ -3117,6 +3137,7 @@
                 "modules/common/login-pop/index.less",
                 "modules/common/swipe/swipe.less",
                 "modules/common/swiper/index.less",
+                "modules/common/cart-ani/index.less",
                 "modules/common/gotop/index.less",
                 "modules/search-panel/index.less",
                 "modules/goods-list/index.less"

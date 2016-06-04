@@ -9,6 +9,7 @@ var Bubble = require('common/bubble/bubble');
 var Timer = require('common/timer/timer');
 var FixTop = require('common/fix-top/index');
 var Swiper = require('common/swiper/index');
+var CartAni = require('common/cart-ani/index');
 
 require('common/gotop/index');
 require('search-panel/index');
@@ -158,7 +159,9 @@ function addCart(evt) {
 			goodsId: goodsId,
 		}
 	}, function() {
-		initCart();
+		new CartAni($cur.parent().parent().find('.img-wrap'), $('.cart')).fly(function() {
+			initCart();
+		});
 	});
 }
 
