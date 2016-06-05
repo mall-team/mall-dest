@@ -3874,7 +3874,6 @@ var FixTop = require('common/fix-top/index');
 var Swiper = require('common/swiper/index');
 var CartAni = require('common/cart-ani/index');
 
-console.log('-----new');
 
 require('common/gotop/index');
 require('search-panel/index');

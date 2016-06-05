@@ -2584,11 +2584,11 @@ __p+='\r\n\t\t</div>\r\n\t\t<div class="item-info">\r\n\t\t\t<div class="item-ti
 ((__t=( item.name ))==null?'':__t)+
 '</div>\r\n\t\t\t<div class="item-price">\r\n\t\t\t\t<span class="price">&yen; '+
 ((__t=( item.sale_price ))==null?'':__t)+
-'</span>\r\n\t\t\t\t<a class="btn-sm ';
+'</span>\r\n\t\t\t\t<a class="btn-sm" ';
  if(item.start == 1){ 
-__p+='J-add-cart ';
+__p+=' onclick="addCart(event)" ';
  } 
-__p+='" goods-id="'+
+__p+=' goods-id="'+
 ((__t=( item.goods_id ))==null?'':__t)+
 '"></a>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</a>\r\n</div>\r\n';
  }) 
