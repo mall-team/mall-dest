@@ -1898,6 +1898,30 @@ section.cart-section {
   vertical-align: middle;
   margin-left: 10px;
 }
+.note-section {
+  background-color: #ffffff;
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 0 3.125%;
+  height: 46px;
+  line-height: 46px;
+  display: box;
+  display: -ms-box;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.note-section > .input-wrap {
+  margin: 6px 0;
+  flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
 .ticket-section {
   background-color: #ffffff;
   height: 46px;
